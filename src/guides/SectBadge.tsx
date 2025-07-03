@@ -1,20 +1,20 @@
 import React from 'react';
 
 export enum SECT {
-  ATTACK = 'ATTACK',
-  CRIT = 'CRIT',
-  EVADE = 'EVADE',
-  FURY = 'FURY',
-  HEALTH = 'HEALTH',
-  FROST = 'FROST',
-  VULNERABLE = 'VULNERABLE',
-  POISON = 'POISON',
-  REGEN = 'REGEN',
-  SHIELD = 'SHIELD',
-  ULTI = 'ULTI',
-  WARD = 'WARD',
-  CHAOS = 'CHAOS',
-  NONE = 'NONE',
+  ATTACK = 'ATTACK', // 普攻
+  CRIT = 'CRIT', // 暴击
+  EVADE = 'EVADE', // 闪避
+  FURY = 'FURY', // 怒火
+  HEALTH = 'HEALTH', // 生命
+  FROST = 'FROST', // 冰霜
+  VULNERABLE = 'VULNERABLE', // 易伤
+  POISON = 'POISON', // 中毒
+  REGEN = 'REGEN', // 生命回复
+  SHIELD = 'SHIELD', // 盾牌
+  ULTI = 'ULTI', // 大招
+  WARD = 'WARD', // 守卫
+  CHAOS = 'CHAOS', // 混沌
+  NONE = 'NONE', // 无流派
 }
 
 const sectInfo: Record<SECT, { label: string; color: string }> = {
