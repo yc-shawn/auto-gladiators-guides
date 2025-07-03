@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # Allows the action to push to the repository
+  pages: write # Allows the action to deploy to GitHub Pages
+  id-token: write # Required for authentication with GitHub Pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
