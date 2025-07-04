@@ -128,7 +128,7 @@ export default function GuideHome() {
                     key={index}
                     style={{ display: 'flex', alignItems: 'center', gap: 4 }}
                   >
-                    {guide.sets.map((sect) => (
+                    {guide.sects.map((sect) => (
                       <SectBadge
                         key={sect}
                         sect={sect}

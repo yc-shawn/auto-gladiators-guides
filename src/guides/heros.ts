@@ -28,7 +28,7 @@ export enum Rank {
 }
 
 type GuideSet = {
-  sets: SECT[];
+  sects: SECT[];
   description?: string;
 };
 
@@ -46,7 +46,10 @@ export const heros: Hero[] = [
     rank: Rank.A,
     sects: [ATTACK, CRIT],
     image: require('./images/heros/Juggernaut.webp'),
-    guides: [{ sets: [ULTI, CRIT], description: '左左左' }],
+    guides: [
+      { sects: [ULTI, CRIT], description: '左左左' },
+      { sects: [ATTACK, CRIT], description: '左左左' },
+    ],
   },
   {
     name: '剑姬',
@@ -54,8 +57,8 @@ export const heros: Hero[] = [
     sects: [FURY],
     image: require('./images/heros/jianji.png'),
     guides: [
-      { sets: [ULTI, FURY], description: '右右右' },
-      { sets: [ATTACK, FURY], description: '左左左' },
+      { sects: [ULTI, FURY], description: '右右右' },
+      { sects: [ATTACK, FURY], description: '左左左+晶' },
     ],
   },
 ];
