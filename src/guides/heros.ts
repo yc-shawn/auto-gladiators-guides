@@ -61,4 +61,41 @@ export const heros: Hero[] = [
       { sects: [ATTACK, FURY], description: '左左左+晶' },
     ],
   },
+  {
+    name: '魔尊',
+    rank: Rank.B,
+    sects: [CHAOS],
+    image: require('./images/heros/mozun.png'),
+    guides: [
+      { sects: [HEALTH, CHAOS], description: '右右右+晶' },
+      { sects: [HEALTH, CHAOS], description: '右左右' },
+    ],
+  },
+  {
+    name: '锤妹',
+    rank: Rank.B,
+    sects: [SHIELD],
+    image: require('./images/heros/chuimei.png'),
+    guides: [
+      { sects: [ULTI, SHIELD], description: '左左右+晶' },
+      { sects: [CRIT, SHIELD], description: '左左右' },
+    ],
+  },
+  {
+    name: '和尚',
+    rank: Rank.B,
+    sects: [ATTACK],
+    image: require('./images/heros/heshang.png'),
+    guides: [{ sects: [ULTI, ATTACK], description: '右右左' }],
+  },
+  {
+    name: '电音',
+    rank: Rank.B,
+    sects: [NONE],
+    image: require('./images/heros/dianyin.png'),
+    guides: [
+      { sects: [ULTI, REGEN], description: '左左左' },
+      { sects: [ULTI, REGEN], description: '左左右' },
+    ],
+  },
 ];
