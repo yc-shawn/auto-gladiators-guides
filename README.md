@@ -7,5 +7,6 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### Github Page
-Once change pushed to `main` branch, it will auto deploy to gh page with github action
+Once changes are pushed to the main branch, the site will be automatically deployed to GitHub Pages via a GitHub Action.
+
 https://yc-shawn.github.io/auto-gladiators-guides
