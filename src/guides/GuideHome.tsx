@@ -1,8 +1,9 @@
 import React from 'react';
-import SectBadge, { SECT } from './SectBadge';
-import { heros } from './heros';
 import { Button } from 'antd';
-import RankBadge from './RankBadge';
+
+import SectBadge, { SECT } from './SectBadge';
+import { heroes, Rank } from './heroes';
+import HeroCard from './HeroCard';
 
 export default function GuideHome() {
   const [activeSects, setActiveSects] = React.useState<SECT[]>(
@@ -10,9 +11,15 @@ export default function GuideHome() {
   );
   const [showRank, setShowRank] = React.useState(true);
 
-  const selectedHeros = heros.filter((hero) =>
+  const selectedheroes = heroes.filter((hero) =>
     hero.sects.some((sect) => activeSects.includes(sect))
   );
+
+  const sHero = selectedheroes.filter(({ rank }) => rank === Rank.S);
+  const aHero = selectedheroes.filter(({ rank }) => rank === Rank.A);
+  const bHero = selectedheroes.filter(({ rank }) => rank === Rank.B);
+  const cHero = selectedheroes.filter(({ rank }) => rank === Rank.C);
+  const dHero = selectedheroes.filter(({ rank }) => rank === Rank.D);
 
   return (
     <div>
@@ -44,13 +51,15 @@ export default function GuideHome() {
           </div>
         ))}
       </section>
-      <hr />
+
       <section
         style={{
-          padding: '0 16px',
           display: 'flex',
           justifyContent: 'center',
           gap: 8,
+          padding: 16,
+          borderTop: '1px solid #a5b1c2',
+          borderBottom: '1px solid #a5b1c2',
         }}
       >
         <Button
@@ -70,92 +79,32 @@ export default function GuideHome() {
         </Button>
       </section>
 
-      <hr />
+      {/* Empty */}
+      {selectedheroes.length === 0 && (
+        <div style={{ padding: 16, textAlign: 'center' }}>
+          <h2>未找到符合所选流派的英雄</h2>
+          <p>请选择其他流派以查看可用的英雄。</p>
+        </div>
+      )}
 
-      <section
-        style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
-      >
-        {/* Empty */}
-        {selectedHeros.length === 0 && (
-          <div style={{ padding: 16 }}>
-            <h2>未找到符合所选流派的英雄</h2>
-            <p>请选择其他流派以查看可用的英雄。</p>
-          </div>
-        )}
-
-        {/* Hero Cards */}
-        {selectedHeros.map((hero) => {
-          return (
-            <div
-              style={{
-                margin: 6,
-                border: '1px solid #ccc',
-                borderRadius: 3,
-                width: 125,
-                overflow: 'hidden',
-              }}
-            >
-              {/* Image */}
-              <div
-                style={{
-                  width: 125,
-                  height: 70,
-                  position: 'relative',
-                  overflow: 'hidden',
-                }}
-              >
-                {showRank && <RankBadge rank={hero.rank} />}
-
-                <img src={hero.image} alt={hero.name} width="100%" />
-                <div
-                  style={{
-                    position: 'absolute',
-                    left: 2,
-                    bottom: 2,
-                    color: 'white',
-                    fontSize: 10,
-                    fontWeight: 'bold',
-                    textShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-                  }}
-                >
-                  {hero.name}
-                </div>
-                <div style={{ position: 'absolute', right: 1, bottom: 1 }}>
-                  {hero.sects.map((sect) => (
-                    <SectBadge sect={sect} height={30} fontSize={15} />
-                  ))}
-                </div>
-              </div>
-
-              <div
-                style={{
-                  padding: 4,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 8,
-                }}
-              >
-                {hero.guides.map((guide, index) => (
-                  <div
-                    key={index}
-                    style={{ display: 'flex', alignItems: 'center', gap: 4 }}
-                  >
-                    {guide.sects.map((sect) => (
-                      <SectBadge
-                        key={sect}
-                        sect={sect}
-                        height={22}
-                        fontSize={10}
-                      />
-                    ))}
-                    <span style={{ fontSize: 13 }}>{guide.description}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </section>
+      {/* Hero Cards */}
+      {[sHero, aHero, bHero, cHero, dHero]
+        .filter((list) => list.length)
+        .map((heroGroup, index) => (
+          <section
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              marginTop: 10,
+            }}
+            key={index}
+          >
+            {heroGroup.map((hero) => (
+              <HeroCard hero={hero} showRank={showRank} />
+            ))}
+          </section>
+        ))}
     </div>
   );
 }

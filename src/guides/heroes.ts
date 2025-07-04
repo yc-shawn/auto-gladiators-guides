@@ -32,7 +32,7 @@ type GuideSet = {
   description?: string;
 };
 
-type Hero = {
+export type Hero = {
   name: string;
   rank: Rank;
   sects: SECT[];
@@ -40,12 +40,12 @@ type Hero = {
   guides: GuideSet[];
 };
 
-export const heros: Hero[] = [
+export const heroes: Hero[] = [
   {
     name: '剑圣',
     rank: Rank.A,
     sects: [ATTACK, CRIT],
-    image: require('./images/heros/Juggernaut.webp'),
+    image: require('./images/heroes/Juggernaut.webp'),
     guides: [
       { sects: [ULTI, CRIT], description: '左左左' },
       { sects: [ATTACK, CRIT], description: '左左左' },
@@ -55,7 +55,7 @@ export const heros: Hero[] = [
     name: '剑姬',
     rank: Rank.A,
     sects: [FURY],
-    image: require('./images/heros/jianji.png'),
+    image: require('./images/heroes/jianji.png'),
     guides: [
       { sects: [ULTI, FURY], description: '右右右' },
       { sects: [ATTACK, FURY], description: '左左左+晶' },
@@ -65,7 +65,7 @@ export const heros: Hero[] = [
     name: '魔尊',
     rank: Rank.B,
     sects: [CHAOS],
-    image: require('./images/heros/mozun.png'),
+    image: require('./images/heroes/mozun.png'),
     guides: [
       { sects: [HEALTH, CHAOS], description: '右右右+晶' },
       { sects: [HEALTH, CHAOS], description: '右左右' },
@@ -75,7 +75,7 @@ export const heros: Hero[] = [
     name: '锤妹',
     rank: Rank.B,
     sects: [SHIELD],
-    image: require('./images/heros/chuimei.png'),
+    image: require('./images/heroes/chuimei.png'),
     guides: [
       { sects: [ULTI, SHIELD], description: '左左右+晶' },
       { sects: [CRIT, SHIELD], description: '左左右' },
@@ -85,14 +85,14 @@ export const heros: Hero[] = [
     name: '和尚',
     rank: Rank.B,
     sects: [ATTACK],
-    image: require('./images/heros/heshang.png'),
+    image: require('./images/heroes/heshang.png'),
     guides: [{ sects: [ULTI, ATTACK], description: '右右左' }],
   },
   {
     name: '电音',
     rank: Rank.B,
     sects: [NONE],
-    image: require('./images/heros/dianyin.png'),
+    image: require('./images/heroes/dianyin.png'),
     guides: [
       { sects: [ULTI, REGEN], description: '左左左' },
       { sects: [ULTI, REGEN], description: '左左右' },
