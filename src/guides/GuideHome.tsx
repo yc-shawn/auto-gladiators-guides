@@ -2,11 +2,13 @@ import React from 'react';
 import SectBadge, { SECT } from './SectBadge';
 import { heros } from './heros';
 import { Button } from 'antd';
+import RankBadge from './RankBadge';
 
 export default function GuideHome() {
   const [activeSects, setActiveSects] = React.useState<SECT[]>(
     Object.keys(SECT) as SECT[]
   );
+  const [showRank, setShowRank] = React.useState(true);
 
   const selectedHeros = heros.filter((hero) =>
     hero.sects.some((sect) => activeSects.includes(sect))
@@ -63,6 +65,9 @@ export default function GuideHome() {
         >
           全选
         </Button>
+        <Button onClick={() => setShowRank((prev) => !prev)}>
+          {showRank ? '隐藏' : '显示'}评级
+        </Button>
       </section>
 
       <hr />
@@ -81,7 +86,15 @@ export default function GuideHome() {
         {/* Hero Cards */}
         {selectedHeros.map((hero) => {
           return (
-            <div style={{ margin: 12, border: '1px solid #ccc', width: 125 }}>
+            <div
+              style={{
+                margin: 12,
+                border: '1px solid #ccc',
+                borderRadius: 3,
+                width: 125,
+                overflow: 'hidden',
+              }}
+            >
               {/* Image */}
               <div
                 style={{
@@ -91,7 +104,10 @@ export default function GuideHome() {
                   overflow: 'hidden',
                 }}
               >
+                {showRank && <RankBadge rank={hero.rank} />}
+
                 <img src={hero.image} alt={hero.name} width="100%" />
+                <div>{hero.name}</div>
                 <div style={{ position: 'absolute', right: 1, bottom: 1 }}>
                   {hero.sects.map((sect) => (
                     <SectBadge sect={sect} height={30} fontSize={15} />

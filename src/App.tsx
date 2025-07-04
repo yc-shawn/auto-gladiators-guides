@@ -3,7 +3,11 @@ import GuideHome from './guides/GuideHome';
 
 const App: React.FC = () => {
   return (
-    <main>
+    <main
+      style={{
+        minHeight: '100vh',
+      }}
+    >
       <GuideHome />
     </main>
   );
