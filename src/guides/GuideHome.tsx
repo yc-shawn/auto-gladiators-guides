@@ -21,8 +21,8 @@ export default function GuideHome() {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          padding: '16px',
-          gap: 16,
+          padding: 12,
+          gap: 12,
         }}
       >
         {Object.keys(SECT).map((sect) => (
@@ -88,7 +88,7 @@ export default function GuideHome() {
           return (
             <div
               style={{
-                margin: 12,
+                margin: 6,
                 border: '1px solid #ccc',
                 borderRadius: 3,
                 width: 125,
@@ -107,7 +107,19 @@ export default function GuideHome() {
                 {showRank && <RankBadge rank={hero.rank} />}
 
                 <img src={hero.image} alt={hero.name} width="100%" />
-                <div>{hero.name}</div>
+                <div
+                  style={{
+                    position: 'absolute',
+                    left: 2,
+                    bottom: 2,
+                    color: 'white',
+                    fontSize: 10,
+                    fontWeight: 'bold',
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.5)',
+                  }}
+                >
+                  {hero.name}
+                </div>
                 <div style={{ position: 'absolute', right: 1, bottom: 1 }}>
                   {hero.sects.map((sect) => (
                     <SectBadge sect={sect} height={30} fontSize={15} />
