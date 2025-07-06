@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.e6c13ad2.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.0d03f457.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.1f874748.js",
     "static/js/453.9ea5c1ea.chunk.js": "/auto-gladiators-guides/static/js/453.9ea5c1ea.chunk.js",
-    "static/media/chuimei.png": "/auto-gladiators-guides/static/media/chuimei.1d9bb7eb7b8b905e25ba.png",
-    "static/media/heshang.png": "/auto-gladiators-guides/static/media/heshang.b44fd873ab78ce8f958f.png",
-    "static/media/mozun.png": "/auto-gladiators-guides/static/media/mozun.68ea78ce9e9e650a622f.png",
-    "static/media/dianyin.png": "/auto-gladiators-guides/static/media/dianyin.2ecc8d9b2cbe0fff9efe.png",
-    "static/media/jianji.png": "/auto-gladiators-guides/static/media/jianji.f21eb96b742efed2c3f9.png",
+    "static/media/chuimei.jpeg": "/auto-gladiators-guides/static/media/chuimei.1ac5895ba6ae350595a1.jpeg",
+    "static/media/heshang.jpeg": "/auto-gladiators-guides/static/media/heshang.1f53b9dc96ff8dd05f54.jpeg",
+    "static/media/mozun.jpeg": "/auto-gladiators-guides/static/media/mozun.29c6d145015e46f99972.jpeg",
+    "static/media/jianji.jpeg": "/auto-gladiators-guides/static/media/jianji.592698166554f01e5850.jpeg",
+    "static/media/dianyin.jpeg": "/auto-gladiators-guides/static/media/dianyin.c7a18c7adc956830fe70.jpeg",
     "static/media/Juggernaut.webp": "/auto-gladiators-guides/static/media/Juggernaut.fedfb44982c2d3d1d6ba.webp",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.e6c13ad2.css.map": "/auto-gladiators-guides/static/css/main.e6c13ad2.css.map",
-    "main.0d03f457.js.map": "/auto-gladiators-guides/static/js/main.0d03f457.js.map",
+    "main.1f874748.js.map": "/auto-gladiators-guides/static/js/main.1f874748.js.map",
     "453.9ea5c1ea.chunk.js.map": "/auto-gladiators-guides/static/js/453.9ea5c1ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0d03f457.js"
+    "static/js/main.1f874748.js"
   ]
 }
