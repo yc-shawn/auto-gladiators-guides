@@ -12,7 +12,7 @@ export default function GuideHome() {
   const [showRank, setShowRank] = React.useState(true);
 
   const selectedheroes = heroes.filter((hero) =>
-    hero.sects.some((sect) => activeSects.includes(sect))
+    hero.sects.every((sect) => activeSects.includes(sect))
   );
 
   const sHero = selectedheroes.filter(({ rank }) => rank === Rank.S);
