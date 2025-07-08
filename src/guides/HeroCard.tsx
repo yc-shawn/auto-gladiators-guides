@@ -1,6 +1,6 @@
 import React from 'react';
 import RankBadge from './RankBadge';
-import SectBadge from './SectBadge';
+import SectBadge, { sectInfo } from './SectBadge';
 import { Hero } from './heroes';
 
 export default function HeroCard({
@@ -27,6 +27,10 @@ export default function HeroCard({
           height: 70,
           position: 'relative',
           overflow: 'hidden',
+          background: hero.remoteImage
+            ? `center / contain no-repeat url(${hero.remoteImage})`
+            : undefined,
+          backgroundColor: `${sectInfo[hero.sects[0]].color}40`, // Fallback color
         }}
       >
         {showRank && <RankBadge rank={hero.rank} />}

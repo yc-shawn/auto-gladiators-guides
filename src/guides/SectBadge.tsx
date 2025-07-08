@@ -59,7 +59,7 @@ export enum SECT {
   NONE = 'NONE',
 }
 
-const sectInfo: Record<SECT, { label: string; color: string }> = {
+export const sectInfo: Record<SECT, { label: string; color: string }> = {
   [SECT.ATTACK]: { label: '普', color: '#554a8a' },
   [SECT.CHAOS]: { label: '混', color: '#a3a0de' },
   [SECT.CRIT]: { label: '暴', color: '#da8841' },

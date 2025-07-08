@@ -37,6 +37,7 @@ export type Hero = {
   rank: Rank;
   sects: SECT[];
   image: string;
+  remoteImage?: string; // url to fast loading image from internet
   guides: GuideSet[];
 };
 
@@ -647,6 +648,8 @@ export const heroes: Hero[] = [
     rank: Rank.S,
     sects: [HEALTH],
     image: require('./images/heroes/tiny.png'),
+    remoteImage:
+      'https://tiermaker.com/images/template_images/2022/15700042/all-dota-2-heroes-732e-15700042/tinyiconpng.png',
     guides: [
       { sects: [HEALTH, ATTACK], description: '左左左' },
       { sects: [HEALTH, POISON,VULNERABLE], description: '左右右' },
