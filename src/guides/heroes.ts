@@ -131,7 +131,7 @@ export const heroes: Hero[] = [
     rank: Rank.A,
     sects: [FURY],
     image: require('./images/heroes/jianji.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/jianji.jjpg',
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/jianji.jpg',
     guides: [
       { sects: [ULTI, FURY], description: '右右右' },
       { sects: [ATTACK, FURY], description: '左左左+晶' },
@@ -239,7 +239,7 @@ export const heroes: Hero[] = [
     rank: Rank.B,
     sects: [CHAOS],
     image: require('./images/heroes/mozun.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/mozun.jjpg',
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/mozun.jpg',
     guides: [
       { sects: [HEALTH, CHAOS], description: '右右右+晶' },
       { sects: [HEALTH, CHAOS], description: '右左右' },
@@ -250,7 +250,7 @@ export const heroes: Hero[] = [
     rank: Rank.B,
     sects: [SHIELD],
     image: require('./images/heroes/chuimei.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/chuimei.jjpg',
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/chuimei.jpg',
     guides: [
       { sects: [ULTI, SHIELD], description: '左左右+晶' },
       { sects: [CRIT, SHIELD], description: '左左右' },
@@ -464,7 +464,7 @@ export const heroes: Hero[] = [
     rank: Rank.B,
     sects: [ATTACK],
     image: require('./images/heroes/heshang.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/heshang.jjpg',
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/heshang.jpg',
     guides: [{ sects: [ULTI, ATTACK], description: '右右左' }],
   },
   {
@@ -574,7 +574,7 @@ export const heroes: Hero[] = [
     rank: Rank.B,
     sects: [NONE],
     image: require('./images/heroes/dianyin.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/dianyin.jjpg',
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/dianyin.jpg',
     guides: [
       { sects: [ULTI, REGEN], description: '左左左' },
       { sects: [ULTI, REGEN], description: '左左右' },
