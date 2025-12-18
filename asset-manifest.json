@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.e6c13ad2.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.33883f18.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.023c0124.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
+    "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
+    "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
     "static/media/timbersaw.jpg": "/auto-gladiators-guides/static/media/timbersaw.6450975a5cf0a8d8108d.jpg",
+    "static/media/beast.jpg": "/auto-gladiators-guides/static/media/beast.78a20cdfd36a6f1f68ab.jpg",
     "static/media/alchemist.jpg": "/auto-gladiators-guides/static/media/alchemist.eb47849c2d63c6a8bcd5.jpg",
     "static/media/clinkz.jpg": "/auto-gladiators-guides/static/media/clinkz.4cc212ee4de63186a4fd.jpg",
+    "static/media/silencer.jpg": "/auto-gladiators-guides/static/media/silencer.23dcfcfc8673437f04ca.jpg",
+    "static/media/broodmother.jpg": "/auto-gladiators-guides/static/media/broodmother.8ba7c56309597de47ce5.jpg",
+    "static/media/enigma.jpg": "/auto-gladiators-guides/static/media/enigma.d35aace6ec702e1be384.jpg",
     "static/media/skywrathmage.jpg": "/auto-gladiators-guides/static/media/skywrathmage.0b3de962173c37780a1c.jpg",
     "static/media/monkeyking.jpg": "/auto-gladiators-guides/static/media/monkeyking.38d5dcad8799fa7881ce.jpg",
     "static/media/hoodwink.jpg": "/auto-gladiators-guides/static/media/hoodwink.da4946f7e823a1476892.jpg",
     "static/media/zeus.jpg": "/auto-gladiators-guides/static/media/zeus.e59d4ac82d927968be1a.jpg",
     "static/media/voidspirit.jpg": "/auto-gladiators-guides/static/media/voidspirit.038ed4856f2d323d7180.jpg",
+    "static/media/bristleback.jpg": "/auto-gladiators-guides/static/media/bristleback.dd24a540dda4f6e24c7e.jpg",
     "static/media/muerta.jpg": "/auto-gladiators-guides/static/media/muerta.2b3ac47cd55dd1f89883.jpg",
     "static/media/huskar.jpg": "/auto-gladiators-guides/static/media/huskar.83202d6b36c023cd84a1.jpg",
     "static/media/necrophos.jpg": "/auto-gladiators-guides/static/media/necrophos.93f6a6ac6f7c0d24b266.jpg",
@@ -23,6 +30,7 @@
     "static/media/viper.jpg": "/auto-gladiators-guides/static/media/viper.8a4ab68aa76c8d21baa9.jpg",
     "static/media/lifestealer.jpg": "/auto-gladiators-guides/static/media/lifestealer.6daf5ad7f59183440151.jpg",
     "static/media/emberspirit.jpg": "/auto-gladiators-guides/static/media/emberspirit.0987548ef31337dd4b3b.jpg",
+    "static/media/antimage.jpg": "/auto-gladiators-guides/static/media/antimage.bdfc9d089d8bdd3a171c.jpg",
     "static/media/treantprotector.jpg": "/auto-gladiators-guides/static/media/treantprotector.36c665125fc44866ddcb.jpg",
     "static/media/omniknight.jpg": "/auto-gladiators-guides/static/media/omniknight.540160d1ff46b1526688.jpg",
     "static/media/riki.jpg": "/auto-gladiators-guides/static/media/riki.0284e49ae2d4eb5fe490.jpg",
@@ -69,15 +77,16 @@
     "static/media/ringmaster.jpg": "/auto-gladiators-guides/static/media/ringmaster.314bceec4cde09a60a36.jpg",
     "static/media/phantomassassin.jpg": "/auto-gladiators-guides/static/media/phantomassassin.c51de0096e48c60c7741.jpg",
     "static/media/shadowfiend.jpg": "/auto-gladiators-guides/static/media/shadowfiend.72e8bb18f5dc85d25634.jpg",
+    "static/media/shanxiayin.jpg": "/auto-gladiators-guides/static/media/shanxiayin.7bc3495495702418d26e.jpg",
     "static/media/tiny.jpg": "/auto-gladiators-guides/static/media/tiny.2a356af05b9d645d5a22.jpg",
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.e6c13ad2.css.map": "/auto-gladiators-guides/static/css/main.e6c13ad2.css.map",
-    "main.33883f18.js.map": "/auto-gladiators-guides/static/js/main.33883f18.js.map",
+    "main.023c0124.js.map": "/auto-gladiators-guides/static/js/main.023c0124.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.33883f18.js"
+    "static/js/main.023c0124.js"
   ]
 }
