@@ -344,7 +344,7 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/mozun.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/mozun.jpg',
     guides: [
-      { sects: [ATTACK, CHAOS], description: '左左右+晶' },
+      { sects: [ATTACK, CHAOS], description: '左左左+晶' },
       { sects: [HEALTH, CHAOS], description: '左左右' },
     ],
   },
@@ -757,7 +757,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '墨客',
-    rank: Rank.S,
+    rank: Rank.A,
     sects: [EVADE],
     image: require('./images/heroes/grimstroke.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/grimstroke.jpg',
