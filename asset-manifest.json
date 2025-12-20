@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.e6c13ad2.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.023c0124.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.08ded310.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -82,11 +82,11 @@
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.e6c13ad2.css.map": "/auto-gladiators-guides/static/css/main.e6c13ad2.css.map",
-    "main.023c0124.js.map": "/auto-gladiators-guides/static/js/main.023c0124.js.map",
+    "main.08ded310.js.map": "/auto-gladiators-guides/static/js/main.08ded310.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.023c0124.js"
+    "static/js/main.08ded310.js"
   ]
 }
