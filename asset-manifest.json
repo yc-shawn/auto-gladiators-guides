@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.e6c13ad2.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.08ded310.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.073e4981.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
     "static/media/timbersaw.jpg": "/auto-gladiators-guides/static/media/timbersaw.6450975a5cf0a8d8108d.jpg",
+    "static/media/largo.jpg": "/auto-gladiators-guides/static/media/largo.992e0f7f30baaf215546.jpg",
     "static/media/beast.jpg": "/auto-gladiators-guides/static/media/beast.78a20cdfd36a6f1f68ab.jpg",
     "static/media/alchemist.jpg": "/auto-gladiators-guides/static/media/alchemist.eb47849c2d63c6a8bcd5.jpg",
+    "static/media/druid.jpg": "/auto-gladiators-guides/static/media/druid.f9289c2551e11ef34896.jpg",
     "static/media/clinkz.jpg": "/auto-gladiators-guides/static/media/clinkz.4cc212ee4de63186a4fd.jpg",
     "static/media/silencer.jpg": "/auto-gladiators-guides/static/media/silencer.23dcfcfc8673437f04ca.jpg",
     "static/media/broodmother.jpg": "/auto-gladiators-guides/static/media/broodmother.8ba7c56309597de47ce5.jpg",
@@ -48,6 +50,7 @@
     "static/media/juggernaut.jpg": "/auto-gladiators-guides/static/media/juggernaut.c5c3f0d79bbd3cb97874.jpg",
     "static/media/pangolier.jpg": "/auto-gladiators-guides/static/media/pangolier.fdb3cb8aa745d33dd755.jpg",
     "static/media/earthshaker.jpg": "/auto-gladiators-guides/static/media/earthshaker.27835937b15fb46c16e5.jpg",
+    "static/media/terrorblade.jpg": "/auto-gladiators-guides/static/media/terrorblade.195b8cd185605fa2cbbe.jpg",
     "static/media/kez.jpg": "/auto-gladiators-guides/static/media/kez.67ced8c8192b762c9f44.jpg",
     "static/media/razor.jpg": "/auto-gladiators-guides/static/media/razor.a195563a29046db001e3.jpg",
     "static/media/mars.jpg": "/auto-gladiators-guides/static/media/mars.141a007392e16c8486da.jpg",
@@ -82,11 +85,11 @@
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.e6c13ad2.css.map": "/auto-gladiators-guides/static/css/main.e6c13ad2.css.map",
-    "main.08ded310.js.map": "/auto-gladiators-guides/static/js/main.08ded310.js.map",
+    "main.073e4981.js.map": "/auto-gladiators-guides/static/js/main.073e4981.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.08ded310.js"
+    "static/js/main.073e4981.js"
   ]
 }
