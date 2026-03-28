@@ -4,6 +4,7 @@ import { Button } from 'antd';
 import SectBadge, { SECT } from './SectBadge';
 import { heroes, Rank } from './heroes';
 import HeroCard from './HeroCard';
+import { loops } from './loops';
 
 export default function GuideHome() {
   const [activeSects, setActiveSects] = React.useState<SECT[]>(
@@ -14,6 +15,12 @@ export default function GuideHome() {
   const selectedheroes = heroes.filter((hero) =>
     hero.sects.every((sect) => activeSects.includes(sect))
   );
+
+  const selectedLoops = loops.filter((loop) =>
+    loop.requiredSects.every((sect) => activeSects.includes(sect))
+  );
+  const blueLoops = selectedLoops.filter((l) => l.route === 'blue');
+  const redLoops = selectedLoops.filter((l) => l.route === 'red');
 
   const sHero = selectedheroes.filter(({ rank }) => rank === Rank.S);
   const aHero = selectedheroes.filter(({ rank }) => rank === Rank.A);
@@ -105,6 +112,47 @@ export default function GuideHome() {
             ))}
           </section>
         ))}
+
+      {/* Loop Chains */}
+      {selectedLoops.length > 0 && (
+        <section style={{ padding: '16px 12px', borderTop: '1px solid #a5b1c2', marginTop: 12 }}>
+          <h3 style={{ margin: '0 0 12px', textAlign: 'center', color: '#333' }}>循环链路</h3>
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
+            {blueLoops.length > 0 && (
+              <div style={{ flex: '1 1 280px', maxWidth: 480 }}>
+                <div style={{ fontWeight: 'bold', color: '#47a1af', marginBottom: 8, fontSize: 14 }}>
+                  🔵 经由 魔能爆轰 回路
+                </div>
+                {blueLoops.map((loop) => (
+                  <div key={loop.id} style={{ marginBottom: 8, fontSize: 13, display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 4 }}>
+                    <span style={{ fontWeight: 'bold', marginRight: 2 }}>{loop.label.split(' ')[0]}</span>
+                    {loop.requiredSects.map((sect) => (
+                      <SectBadge key={sect} sect={sect} height={22} fontSize={11} />
+                    ))}
+                    <span style={{ color: '#666', fontSize: 12 }}>{loop.label.split(/^[①-⑫]\s*/)[1]}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {redLoops.length > 0 && (
+              <div style={{ flex: '1 1 280px', maxWidth: 480 }}>
+                <div style={{ fontWeight: 'bold', color: '#b34e49', marginBottom: 8, fontSize: 14 }}>
+                  🔴 经由 物理暴击 回路
+                </div>
+                {redLoops.map((loop) => (
+                  <div key={loop.id} style={{ marginBottom: 8, fontSize: 13, display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 4 }}>
+                    <span style={{ fontWeight: 'bold', marginRight: 2 }}>{loop.label.split(' ')[0]}</span>
+                    {loop.requiredSects.map((sect) => (
+                      <SectBadge key={sect} sect={sect} height={22} fontSize={11} />
+                    ))}
+                    <span style={{ color: '#666', fontSize: 12 }}>{loop.label.split(/^[①-⑫]\s*/)[1]}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
