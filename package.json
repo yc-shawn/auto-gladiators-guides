@@ -1,7 +1,7 @@
 {
   "name": "auto-gladiators-guides",
   "version": "0.1.0",
-  "homepage": "https://yc-shawn.github.io/auto-gladiators-guides",
+  "homepage": "https://mythos.mobi",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
