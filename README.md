@@ -9,4 +9,4 @@ You will also see any lint errors in the console.
 ### Github Page
 Once changes are pushed to the main branch, the site will be automatically deployed to GitHub Pages via a GitHub Action.
 
-https://yc-shawn.github.io/auto-gladiators-guides
+https://mythos.mobi
