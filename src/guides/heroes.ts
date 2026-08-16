@@ -49,8 +49,8 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/juggernaut.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/juggernaut.jpg',
     guides: [
-      { sects: [ATTACK, CRIT], description: '左左右' },
-      { sects: [ULTI, CRIT], description: '右左左' },
+      { sects: [ATTACK, CRIT], description: '左左左' },
+      { sects: [], description: '没生命15右' },
     ],
   },
   {
@@ -133,7 +133,8 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/terrorblade.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_terrorblade.png',
     guides: [
-      { sects: [ATTACK, EVADE], description: '右左左' }
+      { sects: [ATTACK, EVADE], description: '右左左' },
+      { sects: [ATTACK, CRIT], description: '左右右' }
       ],
   },
   {
@@ -154,7 +155,7 @@ export const heroes: Hero[] = [
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/templarassassin.jpg',
     guides: [
       { sects: [ATTACK,ULTI], description: '右左左' },
-      { sects: [SHIELD,POISON,VULNERABLE], description: '左左右' }
+      { sects: [SHIELD,EVADE], description: '左左右' }
     ],
   },
   {
@@ -223,17 +224,17 @@ export const heroes: Hero[] = [
   },
   {
     name: '兽王',
-    rank: Rank.S,
+    rank: Rank.B,
     sects: [CRIT, EVADE],
     image: require('./images/heroes/beastmaster.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_beastmaster.png',
     guides: [
-      { sects: [CRIT, EVADE], description: '右左左' },
+      { sects: [CRIT, EVADE], description: '右左左+晶' },
     ],
   },
   {
     name: '宙斯',
-    rank: Rank.S,
+    rank: Rank.A,
     sects: [ULTI],
     image: require('./images/heroes/zeus.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/zeus.jpg',
@@ -254,12 +255,13 @@ export const heroes: Hero[] = [
   },
   {
     name: '敌法师',
-    rank: Rank.C,
+    rank: Rank.B,
     sects: [ULTI,ATTACK],
     image: require('./images/heroes/antimage.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_antimage.png',
     guides: [
-      { sects: [ULTI], description: '左左左' },
+      { sects: [ULTI], description: '右右右' },
+      { sects: [], description: '奥术至尊+法术棱镜' },
     ],
   },
   {
@@ -319,7 +321,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '山下隐',
-    rank: Rank.A,
+    rank: Rank.B,
     sects: [FURY],
     image: require('./images/heroes/shanxiayin.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/shanxiayin.jpg',
@@ -330,7 +332,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '蝙蝠',
-    rank: Rank.B,
+    rank: Rank.A,
     sects: [FURY],
     image: require('./images/heroes/batrider.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_batrider.png',
@@ -340,7 +342,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '巨魔',
-    rank: Rank.A,
+    rank: Rank.B,
     sects: [FURY, FROST],
     image: require('./images/heroes/trollwarlord.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/trollwarlord.jpg',
@@ -352,12 +354,12 @@ export const heroes: Hero[] = [
   {
     name: '龙骑士',
     rank: Rank.B,
-    sects: [FURY, FROST],
+    sects: [POISON, FURY, FROST],
     image: require('./images/heroes/knight.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_dragon_knight.png',
     guides: [
-      { sects: [FURY, REGEN, WARD], description: '左右左' },
-      { sects: [], description: '进化3火3冰' },
+      { sects: [FURY, REGEN, FROST], description: '左右左' },
+      { sects: [POISON, CRIT], description: '左右右' },
     ],
   },
   {
@@ -394,13 +396,13 @@ export const heroes: Hero[] = [
   },
   {
     name: '冰女',
-    rank: Rank.C,
+    rank: Rank.B,
     sects: [FROST],
     image: require('./images/heroes/crystalmaiden.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/crystalmaiden.jpg',
     guides: [
-      { sects: [CRIT, REGEN, FROST], description: '右右左' },
-      { sects: [ATTACK], description: '左左右+晶' },
+      { sects: [CRIT, REGEN, FROST], description: '左左左' },
+      { sects: [ULTI], description: '右右右' },
     ],
   },
   {
@@ -496,6 +498,7 @@ export const heroes: Hero[] = [
     remoteImage: 'https://img.dota2.com.cn/dota2static/file/b8b45eb4-e255-424a-8fcb-47f8462f879e.png',
     guides: [
       { sects: [HEALTH], description: '右右左' },
+      { sects: [], description: '有大招5左' },
     ],
   },
   {
@@ -527,7 +530,7 @@ export const heroes: Hero[] = [
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/pudge.jpg',
     guides: [
       { sects: [HEALTH, POISON], description: '右右右' },
-      { sects: [ULTI, HEALTH], description: '左左左' },
+      { sects: [ULTI], description: '左左左' },
     ],
   },
   {
@@ -539,6 +542,27 @@ export const heroes: Hero[] = [
     guides: [
       { sects: [HEALTH], description: '右右右' },
       { sects: [ULTI], description: '右左左' },
+    ],
+  },
+  {
+    name: '术士',
+    rank: Rank.S,
+    sects: [ATTACK, HEALTH, WARD],
+    image: require('./images/heroes/warlock.jpg'),
+    remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_warlock.png',
+    guides: [
+      { sects: [HEALTH], description: '先减4秒' },
+      { sects: [], description: '后面看情况' },
+    ],
+  },
+  {
+    name: '血魔',
+    rank: Rank.B,
+    sects: [ATTACK, HEALTH],
+    image: require('./images/heroes/bloodseeker.jpg'),
+    remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_bloodseeker.png',
+    guides: [
+      { sects: [ATTACK, HEALTH], description: '左左左' },
     ],
   },
   {
@@ -570,7 +594,7 @@ export const heroes: Hero[] = [
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_largo.png',
     guides: [
       { sects: [REGEN, CRIT], description: '左右左' },
-      { sects: [REGEN, EVADE], description: '左右左' },
+      { sects: [REGEN, EVADE], description: '左左左' },
     ],
   },
   {
@@ -633,7 +657,7 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/abaddon.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/abaddon.jpg',
     guides: [
-      { sects: [ULTI, SHIELD], description: '右左左' },
+      { sects: [ULTI], description: '右左左，找保命' },
       { sects: [REGEN, SHIELD], description: '左右右' },
     ],
   },
@@ -719,8 +743,8 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/ursa.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/ursa.jpg',
     guides: [
-      { sects: [ULTI,EVADE], description: '右右左' },
-      { sects: [ATTACK], description: '左右右' },
+      { sects: [ULTI], description: '左左左' },
+      { sects: [ATTACK], description: '右右右' },
     ],
   },
   {
@@ -767,6 +791,16 @@ export const heroes: Hero[] = [
     ],
   },
   {
+    name: '幽鬼',
+    rank: Rank.B,
+    sects: [EVADE],
+    image: require('./images/heroes/spectre.jpg'),
+    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/spectre.jpg',
+    guides: [
+      { sects: [HEALTH, EVADE], description: '右左左' },
+    ],
+  },
+  {
     name: '隐刺',
     rank: Rank.A,
     sects: [VULNERABLE, EVADE],
@@ -774,16 +808,6 @@ export const heroes: Hero[] = [
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/riki.jpg',
     guides: [
       { sects: [HEALTH, EVADE, VULNERABLE], description: '右右右' },
-    ],
-  },
-  {
-    name: '幽鬼',
-    rank: Rank.C,
-    sects: [EVADE],
-    image: require('./images/heroes/spectre.jpg'),
-    remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/spectre.jpg',
-    guides: [
-      { sects: [HEALTH, EVADE], description: '右左左' },
     ],
   },
   {
@@ -803,7 +827,6 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/grimstroke.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/grimstroke.jpg',
     guides: [
-      { sects: [EVADE], description: '左左左' },
       { sects: [ULTI], description: '右右右' }
     ],
   },
@@ -815,7 +838,7 @@ export const heroes: Hero[] = [
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/lion.jpg',
     guides: [
       { sects: [ATTACK, CRIT], description: '左左右+晶' },
-      { sects: [CHAOS, FROST, FURY], description: '左右右' },
+      { sects: [REGEN, FROST, FURY], description: '左右右' },
     ],
   },
   {
@@ -868,7 +891,7 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/monkeyking.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/monkeyking.jpg',
     guides: [
-      { sects: [WARD], description: '左左左' },
+      { sects: [WARD, POISON], description: '左左左' },
       { sects: [ULTI], description: '左右右' },
     ],
   },
@@ -885,12 +908,13 @@ export const heroes: Hero[] = [
   },
   {
     name: '电音',
-    rank: Rank.B,
+    rank: Rank.A,
     sects: [NONE],
     image: require('./images/heroes/dianyin.jpg'),
     remoteImage: 'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/dianyin.jpg',
     guides: [
-      { sects: [ULTI, REGEN], description: '左左右' },
+      { sects: [ULTI, REGEN, EVADE], description: '左左右' },
+      { sects: [], description: '没生命，左左左' },
     ],
   },
   {
@@ -906,7 +930,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '刚背兽',
-    rank: Rank.S,
+    rank: Rank.A,
     sects: [NONE],
     image: require('./images/heroes/bristleback.jpg'),
     remoteImage: 'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_bristleback.png',
