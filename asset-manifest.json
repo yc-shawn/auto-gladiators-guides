@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.e451da81.js",
+    "main.js": "/static/js/main.dc8ab9c8.js",
     "static/js/453.6fa19d17.chunk.js": "/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -11,6 +11,7 @@
     "static/media/beast.jpg": "/static/media/beast.78a20cdfd36a6f1f68ab.jpg",
     "static/media/alchemist.jpg": "/static/media/alchemist.eb47849c2d63c6a8bcd5.jpg",
     "static/media/druid.jpg": "/static/media/druid.f9289c2551e11ef34896.jpg",
+    "static/media/bloodseeker.jpg": "/static/media/bloodseeker.5b2ba095038aa1ebe2dc.jpg",
     "static/media/clinkz.jpg": "/static/media/clinkz.4cc212ee4de63186a4fd.jpg",
     "static/media/silencer.jpg": "/static/media/silencer.23dcfcfc8673437f04ca.jpg",
     "static/media/broodmother.jpg": "/static/media/broodmother.8ba7c56309597de47ce5.jpg",
@@ -36,6 +37,7 @@
     "static/media/emberspirit.jpg": "/static/media/emberspirit.0987548ef31337dd4b3b.jpg",
     "static/media/antimage.jpg": "/static/media/antimage.bdfc9d089d8bdd3a171c.jpg",
     "static/media/treantprotector.jpg": "/static/media/treantprotector.36c665125fc44866ddcb.jpg",
+    "static/media/warlock.jpg": "/static/media/warlock.4778cf947643e70aee2a.jpg",
     "static/media/omniknight.jpg": "/static/media/omniknight.540160d1ff46b1526688.jpg",
     "static/media/riki.jpg": "/static/media/riki.0284e49ae2d4eb5fe490.jpg",
     "static/media/phantomlancer.jpg": "/static/media/phantomlancer.f8ecd7ff8611af85a43f.jpg",
@@ -87,11 +89,11 @@
     "static/media/spectre.jpg": "/static/media/spectre.b86fc9e6772365f01351.jpg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.e451da81.js.map": "/static/js/main.e451da81.js.map",
+    "main.dc8ab9c8.js.map": "/static/js/main.dc8ab9c8.js.map",
     "453.6fa19d17.chunk.js.map": "/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e451da81.js"
+    "static/js/main.dc8ab9c8.js"
   ]
 }
