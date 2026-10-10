@@ -119,10 +119,12 @@ export default function HeroCard({
               backgroundColor: 'white',
               borderRadius: 8,
               maxWidth: '600px',
-              maxHeight: '80vh',
+              maxHeight: 'calc(100dvh - 40px)',
               overflow: 'hidden',
               position: 'relative',
               margin: '20px',
+              display: 'flex',
+              flexDirection: 'column',
             }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -168,8 +170,9 @@ export default function HeroCard({
             <div
               style={{
                 padding: 24,
-                overflow: 'auto',
-                maxHeight: 'calc(80vh - 80px)',
+                overflowY: 'auto',
+                flex: '1 1 auto',
+                minHeight: 0,
               }}
             >
               {/* Hero details */}
@@ -242,11 +245,13 @@ export default function HeroCard({
                   Guides ({hero.guides.length})
                 </h3>
                 <div
+                  className="hero-guide-list"
                   style={{ display: 'flex', flexDirection: 'column', gap: 16 }}
                 >
                   {hero.guides.map((guide, index) => (
                     <div
                       key={index}
+                      className="hero-guide"
                       style={{
                         padding: 16,
                         backgroundColor: '#f8f9fa',

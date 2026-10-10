@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Keep multiple builds visible without requiring vertical scrolling on short screens. */
+@media (max-height: 600px) {
+  .hero-guide-list {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .hero-guide {
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+  }
+}
