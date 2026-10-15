@@ -488,8 +488,8 @@ export const heroes: Hero[] = [
     remoteImage:
       'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_pugna.png',
     guides: [
-      { sects: [WARD, REGEN], description: '左右右' },
-      { sects: [], description: '没灵魂链接别玩' },
+      { sects: [WARD, REGEN], description: '左右右 要灵魂链接' },
+      { sects: [ULTI, CRIT], description: '右左右' },
     ],
   },
   {
