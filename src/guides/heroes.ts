@@ -56,7 +56,7 @@ export const heroes: Hero[] = [
   },
   {
     name: 'PA',
-    rank: Rank.B,
+    rank: Rank.A,
     sects: [ATTACK, CRIT],
     image: require('./images/heroes/phantomassassin.jpg'),
     remoteImage:
@@ -89,7 +89,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '几把脸',
-    rank: Rank.A,
+    rank: Rank.B,
     sects: [ATTACK],
     image: require('./images/heroes/facelessvoid.jpg'),
     remoteImage:
@@ -249,7 +249,7 @@ export const heroes: Hero[] = [
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/zeus.jpg',
     guides: [
       { sects: [ATTACK], description: '左左左' },
-      { sects: [ULTI], description: '右右右' },
+      { sects: [ULTI, EVADE], description: '右右右' },
     ],
   },
   {
@@ -352,7 +352,7 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/batrider.jpg'),
     remoteImage:
       'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_batrider.png',
-    guides: [{ sects: [FURY], description: '右右左' }],
+    guides: [{ sects: [HEALTH, FURY], description: '右右左' }],
   },
   {
     name: '巨魔',
@@ -446,7 +446,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '大树',
-    rank: Rank.S,
+    rank: Rank.A,
     sects: [WARD],
     image: require('./images/heroes/treantprotector.jpg'),
     remoteImage:
@@ -544,15 +544,26 @@ export const heroes: Hero[] = [
     ],
   },
   {
+    name: '修真者',
+    rank: Rank.S,
+    sects: [HEALTH],
+    image: require('./images/heroes/xiu.jpg'),
+    remoteImage:
+      'https://i0.hdslb.com/bfs/new_dyn/52d93016d000ead3995d99a1308554d23546640503802196.png',
+    guides: [
+      { sects: [HEALTH, EVADE], description: '右右右' },
+    ],
+  },
+  {
     name: '屠夫',
-    rank: Rank.B,
+    rank: Rank.A,
     sects: [POISON, HEALTH],
     image: require('./images/heroes/pudge.jpg'),
     remoteImage:
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/pudge.jpg',
     guides: [
       { sects: [HEALTH, POISON], description: '右右右' },
-      { sects: [ULTI], description: '左左左' },
+      { sects: [ULTI], description: '左左右' },
     ],
   },
   {
@@ -893,14 +904,13 @@ export const heroes: Hero[] = [
   },
   {
     name: '谜团',
-    rank: Rank.C,
+    rank: Rank.A,
     sects: [CHAOS],
     image: require('./images/heroes/enigma.jpg'),
     remoteImage:
       'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_enigma.png.jpg',
     guides: [
-      { sects: [CHAOS], description: '右左左' },
-      { sects: [], description: '有闪别选' },
+      { sects: [CHAOS, FROST], description: '右左左' },
     ],
   },
   {
