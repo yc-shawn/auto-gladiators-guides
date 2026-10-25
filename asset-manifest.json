@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.65e87461.css",
-    "main.js": "/static/js/main.717fca1f.js",
+    "main.js": "/static/js/main.fcd9e05b.js",
     "static/js/453.6fa19d17.chunk.js": "/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -38,6 +38,7 @@
     "static/media/antimage.jpg": "/static/media/antimage.bdfc9d089d8bdd3a171c.jpg",
     "static/media/treantprotector.jpg": "/static/media/treantprotector.36c665125fc44866ddcb.jpg",
     "static/media/warlock.jpg": "/static/media/warlock.4778cf947643e70aee2a.jpg",
+    "static/media/xiu.jpg": "/static/media/xiu.cc4b3880951ad5c0d439.jpg",
     "static/media/omniknight.jpg": "/static/media/omniknight.540160d1ff46b1526688.jpg",
     "static/media/riki.jpg": "/static/media/riki.0284e49ae2d4eb5fe490.jpg",
     "static/media/phantomlancer.jpg": "/static/media/phantomlancer.f8ecd7ff8611af85a43f.jpg",
@@ -89,11 +90,11 @@
     "static/media/spectre.jpg": "/static/media/spectre.b86fc9e6772365f01351.jpg",
     "index.html": "/index.html",
     "main.65e87461.css.map": "/static/css/main.65e87461.css.map",
-    "main.717fca1f.js.map": "/static/js/main.717fca1f.js.map",
+    "main.fcd9e05b.js.map": "/static/js/main.fcd9e05b.js.map",
     "453.6fa19d17.chunk.js.map": "/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65e87461.css",
-    "static/js/main.717fca1f.js"
+    "static/js/main.fcd9e05b.js"
   ]
 }
