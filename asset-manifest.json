@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/auto-gladiators-guides/static/css/main.65e87461.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.3a0f69e7.js",
+    "main.css": "/auto-gladiators-guides/static/css/main.97a74747.css",
+    "main.js": "/auto-gladiators-guides/static/js/main.ffbd055b.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -88,13 +88,25 @@
     "static/media/shanxiayin.jpg": "/auto-gladiators-guides/static/media/shanxiayin.7bc3495495702418d26e.jpg",
     "static/media/tiny.jpg": "/auto-gladiators-guides/static/media/tiny.2a356af05b9d645d5a22.jpg",
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
+    "static/media/bloodthirsty-strike.png": "/auto-gladiators-guides/static/media/bloodthirsty-strike.7ea2c93b08259b108b00.png",
+    "static/media/revenge-aura.png": "/auto-gladiators-guides/static/media/revenge-aura.cfbfebda5bfeed309460.png",
+    "static/media/armed-guard.png": "/auto-gladiators-guides/static/media/armed-guard.910ee8276d96eb48b793.png",
+    "static/media/arcane-edge.png": "/auto-gladiators-guides/static/media/arcane-edge.7bbb28036a6d0953c5f0.png",
+    "static/media/shield-strike.png": "/auto-gladiators-guides/static/media/shield-strike.ffcda8c9b7cb655a2dc8.png",
+    "static/media/fearless-combo.png": "/auto-gladiators-guides/static/media/fearless-combo.d92d6da1ea3155729665.png",
+    "static/media/chaos-strike.png": "/auto-gladiators-guides/static/media/chaos-strike.df631d0320ecd51f4f74.png",
+    "static/media/frost-strike.png": "/auto-gladiators-guides/static/media/frost-strike.dd5eac415db93bc28545.png",
+    "static/media/courage-cloak.png": "/auto-gladiators-guides/static/media/courage-cloak.549f500161875daf4001.png",
+    "static/media/battle-focus.png": "/auto-gladiators-guides/static/media/battle-focus.b6621c099d9b0dba7f65.png",
+    "static/media/blood-edge.png": "/auto-gladiators-guides/static/media/blood-edge.e11ea94e225bf9c03bfd.png",
+    "static/media/vulnerability-strike.png": "/auto-gladiators-guides/static/media/vulnerability-strike.3e33133d519f8d60a2ae.png",
     "index.html": "/auto-gladiators-guides/index.html",
-    "main.65e87461.css.map": "/auto-gladiators-guides/static/css/main.65e87461.css.map",
-    "main.3a0f69e7.js.map": "/auto-gladiators-guides/static/js/main.3a0f69e7.js.map",
+    "main.97a74747.css.map": "/auto-gladiators-guides/static/css/main.97a74747.css.map",
+    "main.ffbd055b.js.map": "/auto-gladiators-guides/static/js/main.ffbd055b.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65e87461.css",
-    "static/js/main.3a0f69e7.js"
+    "static/css/main.97a74747.css",
+    "static/js/main.ffbd055b.js"
   ]
 }
