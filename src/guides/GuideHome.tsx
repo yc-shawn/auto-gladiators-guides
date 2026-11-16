@@ -27,9 +27,15 @@ export default function GuideHome() {
   const bHero = selectedheroes.filter(({ rank }) => rank === Rank.B);
   const cHero = selectedheroes.filter(({ rank }) => rank === Rank.C);
   const dHero = selectedheroes.filter(({ rank }) => rank === Rank.D);
+  const publicBase = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
 
   return (
     <div>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '10px 16px 0' }}>
+        <a href={`${publicBase}/sects`} style={{ color: '#405a85', fontSize: 14 }}>
+          流派卡片图鉴 →
+        </a>
+      </div>
       <section
         style={{
           display: 'flex',
