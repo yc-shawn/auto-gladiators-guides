@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.29a48a15.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.981f85e9.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.c4f4cc3e.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -88,12 +88,24 @@
     "static/media/shanxiayin.jpg": "/auto-gladiators-guides/static/media/shanxiayin.7bc3495495702418d26e.jpg",
     "static/media/tiny.jpg": "/auto-gladiators-guides/static/media/tiny.2a356af05b9d645d5a22.jpg",
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
+    "static/media/arcane-overload.png": "/auto-gladiators-guides/static/media/arcane-overload.1fc0e90d8a7f2e9459b7.png",
+    "static/media/arcane-storm.png": "/auto-gladiators-guides/static/media/arcane-storm.ab2cdfc896e1f2d627ee.png",
     "static/media/mana-blood.png": "/auto-gladiators-guides/static/media/mana-blood.29e11ff3fc7e771d59fa.png",
+    "static/media/arcane-chaos.png": "/auto-gladiators-guides/static/media/arcane-chaos.e77a1ed9e90cbe33e61e.png",
     "static/media/bloodthirsty-strike.png": "/auto-gladiators-guides/static/media/bloodthirsty-strike.7ea2c93b08259b108b00.png",
+    "static/media/arcane-guard.png": "/auto-gladiators-guides/static/media/arcane-guard.0fe255749ace68e3d11c.png",
+    "static/media/arcane-torrent.png": "/auto-gladiators-guides/static/media/arcane-torrent.c9a231c264edeb897dfa.png",
+    "static/media/arcane-poison.png": "/auto-gladiators-guides/static/media/arcane-poison.464d55787520f288375c.png",
+    "static/media/arcane-spark.png": "/auto-gladiators-guides/static/media/arcane-spark.839943695d097c7fa67c.png",
     "static/media/false-promise.png": "/auto-gladiators-guides/static/media/false-promise.5c250a63a772d964cee3.png",
     "static/media/burst-shield.png": "/auto-gladiators-guides/static/media/burst-shield.4af27bf0dc67bbc25826.png",
+    "static/media/mana-gathering.png": "/auto-gladiators-guides/static/media/mana-gathering.7fb51fd803f5ca755082.png",
+    "static/media/arcane-shield.png": "/auto-gladiators-guides/static/media/arcane-shield.633ca476eaf8bb4d640d.png",
+    "static/media/essence-transition.png": "/auto-gladiators-guides/static/media/essence-transition.2129894578ef4f0caba3.png",
     "static/media/shared-vitality.png": "/auto-gladiators-guides/static/media/shared-vitality.b9e7541e3bc228c68bf6.png",
+    "static/media/mana-suppression.png": "/auto-gladiators-guides/static/media/mana-suppression.70c0b05d190e35890261.png",
     "static/media/revenge-aura.png": "/auto-gladiators-guides/static/media/revenge-aura.cfbfebda5bfeed309460.png",
+    "static/media/arcane-vulnerability.png": "/auto-gladiators-guides/static/media/arcane-vulnerability.00b1f277c2e5a899a8f3.png",
     "static/media/burst-wound.png": "/auto-gladiators-guides/static/media/burst-wound.0d5d37685db269493494.png",
     "static/media/poisonous-medicine.png": "/auto-gladiators-guides/static/media/poisonous-medicine.0e068d635ef102bb1af0.png",
     "static/media/healing-interference.png": "/auto-gladiators-guides/static/media/healing-interference.74251948649d0f6871e8.png",
@@ -101,6 +113,7 @@
     "static/media/arcane-edge.png": "/auto-gladiators-guides/static/media/arcane-edge.7bbb28036a6d0953c5f0.png",
     "static/media/heart-sapping-aura.png": "/auto-gladiators-guides/static/media/heart-sapping-aura.31d3f2b033492dd790c3.png",
     "static/media/coup-de-grace.png": "/auto-gladiators-guides/static/media/coup-de-grace.9c1ed6db8ab5d446e5a2.png",
+    "static/media/arcane-frost.png": "/auto-gladiators-guides/static/media/arcane-frost.09c3028581e6ef4e427a.png",
     "static/media/wind-stride.png": "/auto-gladiators-guides/static/media/wind-stride.4c35eb471bf2d0e405d7.png",
     "static/media/shield-strike.png": "/auto-gladiators-guides/static/media/shield-strike.ffcda8c9b7cb655a2dc8.png",
     "static/media/healing-shield.png": "/auto-gladiators-guides/static/media/healing-shield.94970612b166b352f0dd.png",
@@ -110,6 +123,8 @@
     "static/media/repair-body.png": "/auto-gladiators-guides/static/media/repair-body.096eb5771b0d485978af.png",
     "static/media/invisible-rage.png": "/auto-gladiators-guides/static/media/invisible-rage.53c39ef2b7aa3de93113.png",
     "static/media/burst-rage.png": "/auto-gladiators-guides/static/media/burst-rage.d679f6c6c0ca286b5456.png",
+    "static/media/preemptive-strike.png": "/auto-gladiators-guides/static/media/preemptive-strike.e6e0becf029c8fc25e56.png",
+    "static/media/overload.png": "/auto-gladiators-guides/static/media/overload.577b55673dd170d2be16.png",
     "static/media/beast-bloodline.png": "/auto-gladiators-guides/static/media/beast-bloodline.efed1aca958dafdbaca6.png",
     "static/media/refraction.png": "/auto-gladiators-guides/static/media/refraction.bb0fdd48d31351870a22.png",
     "static/media/slorm-war-drum.png": "/auto-gladiators-guides/static/media/slorm-war-drum.f4578f3ad3b139de30d8.png",
@@ -146,11 +161,11 @@
     "static/media/burst-regeneration.png": "/auto-gladiators-guides/static/media/burst-regeneration.16a85c49cdae00628d82.png",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.29a48a15.css.map": "/auto-gladiators-guides/static/css/main.29a48a15.css.map",
-    "main.981f85e9.js.map": "/auto-gladiators-guides/static/js/main.981f85e9.js.map",
+    "main.c4f4cc3e.js.map": "/auto-gladiators-guides/static/js/main.c4f4cc3e.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29a48a15.css",
-    "static/js/main.981f85e9.js"
+    "static/js/main.c4f4cc3e.js"
   ]
 }
