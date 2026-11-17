@@ -14,6 +14,150 @@ export type SectCardSection = {
   cards: SectCard[];
 };
 
+const critCards: SectCard[] = [
+  {
+    id: 'eagle-eye-enhancement',
+    name: '鹰眼强化',
+    image: require('./images/sects/eagle-eye-enhancement.png'),
+    sects: [SECT.CRIT],
+    description: '提升2/4/6/8/12点基础暴击率',
+  },
+  {
+    id: 'rage-suppression',
+    name: '狂暴抑制',
+    image: require('./images/sects/rage-suppression.png'),
+    sects: [SECT.CRIT],
+    description: '敌人造成伤害时有18%/24%/30%/36%/48%概率无法暴击',
+  },
+  {
+    id: 'invisible-fury',
+    name: '无形狂暴',
+    image: require('./images/sects/invisible-fury.png'),
+    sects: [SECT.EVADE, SECT.CRIT],
+    description: '每3点闪避率提升1%/2%/3%/4%/6%暴击伤害',
+  },
+  {
+    id: 'burst-chaos',
+    name: '爆裂混沌',
+    image: require('./images/sects/burst-chaos.png'),
+    sects: [SECT.CHAOS, SECT.CRIT],
+    description: '每3点闪避率提升0.8/1.6/2.4/3.2/4.8点混沌伤害',
+  },
+  {
+    id: 'burst-edge',
+    name: '爆裂锋刃',
+    image: require('./images/sects/burst-edge.png'),
+    sects: [SECT.ATTACK, SECT.CRIT],
+    description: '每次暴击时在3秒内提升6点攻击力，最多提升6/12/18/24/40点',
+  },
+  {
+    id: 'burst-regeneration',
+    name: '爆裂回复',
+    image: require('./images/sects/burst-regeneration.png'),
+    sects: [SECT.CRIT, SECT.REGEN],
+    description: '每次暴击时，回复10/20/30/40/60点生命',
+  },
+  {
+    id: 'burst-poison',
+    name: '爆裂毒素',
+    image: require('./images/sects/burst-poison.png'),
+    sects: [SECT.CRIT, SECT.POISON],
+    description: '每次暴击时，施加4/8/12/16/24层中毒',
+  },
+  {
+    id: 'burst-frost',
+    name: '爆裂冰霜',
+    image: require('./images/sects/burst-frost.png'),
+    sects: [SECT.CRIT, SECT.FROST],
+    description: '每次暴击时，施加5/10/15/20/30层寒霜',
+  },
+  {
+    id: 'burst-mana',
+    name: '爆裂魔力',
+    image: require('./images/sects/burst-mana.png'),
+    sects: [SECT.CRIT, SECT.ULTI],
+    description: '每次暴击时，获得1.5/3/4.5/6/9点魔法值',
+  },
+  {
+    id: 'burst-shield',
+    name: '爆裂护盾',
+    image: require('./images/sects/burst-shield.png'),
+    sects: [SECT.CRIT, SECT.SHIELD],
+    description: '每次暴击时，获得4/8/12/16/24层护盾',
+  },
+  {
+    id: 'burst-wound',
+    name: '爆裂伤口',
+    image: require('./images/sects/burst-wound.png'),
+    sects: [SECT.CRIT, SECT.VULNERABLE],
+    description: '每次暴击时，施加3/6/9/12/18层易伤',
+  },
+  {
+    id: 'rage-body',
+    name: '狂暴身躯',
+    image: require('./images/sects/rage-body.png'),
+    sects: [SECT.CRIT, SECT.HEALTH],
+    description: '提升40/80/120/160/240点生命值，每点暴击流经验额外提升1/2/3/4/6点',
+  },
+  {
+    id: 'rage-guard',
+    name: '狂暴守卫',
+    image: require('./images/sects/rage-guard.png'),
+    sects: [SECT.CRIT, SECT.WARD],
+    description: '提升首发守卫40/80/120/160/240生命值，每点暴击流经验额外提升1/2/3/4/6点',
+  },
+  {
+    id: 'burst-rage',
+    name: '爆裂怒火',
+    image: require('./images/sects/burst-rage.png'),
+    sects: [SECT.FURY, SECT.CRIT],
+    description: '每次暴击时获得5/10/15/20/30层怒火',
+  },
+  {
+    id: 'magic-barrage',
+    name: '魔能爆轰',
+    image: require('./images/sects/magic-barrage.png'),
+    sects: [SECT.CRIT],
+    description: '魔法伤害可以暴击，概率为当前暴击率的25%/40%/70%',
+  },
+  {
+    id: 'mighty-strike',
+    name: '巨力重击',
+    image: require('./images/sects/mighty-strike.png'),
+    sects: [SECT.CRIT],
+    description: '暴击时额外造成25/50/100点流失生命值伤害',
+  },
+  {
+    id: 'assault',
+    name: '强攻',
+    image: require('./images/sects/assault.png'),
+    sects: [SECT.CRIT],
+    description: '永久提升5/8/14点暴击，开战后提升2/4/8点暴击，持续5秒',
+  },
+  {
+    id: 'lifesource-burst',
+    name: '命源爆破',
+    image: require('./images/sects/lifesource-burst.png'),
+    sects: [SECT.CRIT],
+    description: '每次暴击时，有60%概率额外造成该次伤害80%的流失生命值伤害',
+  },
+  {
+    id: 'coup-de-grace',
+    name: '恩赐解脱',
+    image: require('./images/sects/coup-de-grace.png'),
+    sects: [SECT.CRIT],
+    description: '提升80%暴击伤害。开战后暴击率临时提升至100，持续3次暴击',
+  },
+  {
+    id: 'sword-dance',
+    name: '剑舞',
+    image: require('./images/sects/sword-dance.png'),
+    sects: [SECT.CRIT],
+    description:
+      '暴击眩晕敌方0.6秒，造成5%敌方当前生命值的流失生命值伤害，期间减少敌方40%闪避减伤。冷却1.5秒',
+  },
+];
+
 export const sectCardSections: SectCardSection[] = [
   {
     sect: SECT.ATTACK,
@@ -314,5 +458,10 @@ export const sectCardSections: SectCardSection[] = [
           '+20%闪避减伤，受到可以被闪避的伤害却没有闪避时，有70%概率对敌方造成【40 + 该次伤害*75%*自身闪避%】的流失生命值伤害。',
       },
     ],
+  },
+  {
+    sect: SECT.CRIT,
+    title: '暴击',
+    cards: critCards,
   },
 ];
