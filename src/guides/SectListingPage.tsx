@@ -56,29 +56,44 @@ export default function SectListingPage() {
               </div>
 
               <div className="sect-card-grid">
-                {section.cards.map((card) => (
-                  <article className="sect-card" key={card.id}>
-                    <div className="sect-card-top">
-                      <img className="sect-card-icon" src={card.image} alt="" />
-                      <div className="sect-card-identity">
-                        <h3>{card.name}</h3>
-                        <div
-                          className="sect-card-tags"
-                          aria-label={`关联流派：${card.sects
-                            .map((sect) => sectInfo[sect].label)
-                            .join('、')}`}
-                        >
-                          {card.sects.map((sect, index) => (
-                            <div key={`${sect}-${index}`} title={sectInfo[sect].label}>
-                              <SectBadge sect={sect} height={27} fontSize={13} />
+                {section.cards.map((card, index) => {
+                  const cardsFromEnd = section.cards.length - index;
+                  let rarityClass = '';
+                  if (cardsFromEnd <= 3) {
+                    rarityClass = 'sect-card--legendary';
+                  } else if (cardsFromEnd <= 6) {
+                    rarityClass = 'sect-card--rare';
+                  }
+
+                  return (
+                    <React.Fragment key={card.id}>
+                      {cardsFromEnd === 6 || cardsFromEnd === 3 ? (
+                        <div className="sect-card-row-break" aria-hidden="true" />
+                      ) : null}
+                      <article className={`sect-card ${rarityClass}`}>
+                        <div className="sect-card-top">
+                          <img className="sect-card-icon" src={card.image} alt="" />
+                          <div className="sect-card-identity">
+                            <h3>{card.name}</h3>
+                            <div
+                              className="sect-card-tags"
+                              aria-label={`关联流派：${card.sects
+                                .map((sect) => sectInfo[sect].label)
+                                .join('、')}`}
+                            >
+                              {card.sects.map((sect, index) => (
+                                <div key={`${sect}-${index}`} title={sectInfo[sect].label}>
+                                  <SectBadge sect={sect} height={27} fontSize={13} />
+                                </div>
+                              ))}
                             </div>
-                          ))}
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <p className="sect-card-description">{card.description}</p>
-                  </article>
-                ))}
+                        <p className="sect-card-description">{card.description}</p>
+                      </article>
+                    </React.Fragment>
+                  );
+                })}
               </div>
             </section>
           ))}
