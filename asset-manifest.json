@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/auto-gladiators-guides/static/css/main.29a48a15.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.e6a5d5bb.js",
+    "main.js": "/auto-gladiators-guides/static/js/main.229e4a3d.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -89,13 +89,18 @@
     "static/media/tiny.jpg": "/auto-gladiators-guides/static/media/tiny.2a356af05b9d645d5a22.jpg",
     "static/media/spectre.jpg": "/auto-gladiators-guides/static/media/spectre.b86fc9e6772365f01351.jpg",
     "static/media/bloodthirsty-strike.png": "/auto-gladiators-guides/static/media/bloodthirsty-strike.7ea2c93b08259b108b00.png",
+    "static/media/burst-shield.png": "/auto-gladiators-guides/static/media/burst-shield.4af27bf0dc67bbc25826.png",
     "static/media/revenge-aura.png": "/auto-gladiators-guides/static/media/revenge-aura.cfbfebda5bfeed309460.png",
+    "static/media/burst-wound.png": "/auto-gladiators-guides/static/media/burst-wound.0d5d37685db269493494.png",
     "static/media/armed-guard.png": "/auto-gladiators-guides/static/media/armed-guard.910ee8276d96eb48b793.png",
     "static/media/arcane-edge.png": "/auto-gladiators-guides/static/media/arcane-edge.7bbb28036a6d0953c5f0.png",
+    "static/media/coup-de-grace.png": "/auto-gladiators-guides/static/media/coup-de-grace.9c1ed6db8ab5d446e5a2.png",
     "static/media/wind-stride.png": "/auto-gladiators-guides/static/media/wind-stride.4c35eb471bf2d0e405d7.png",
     "static/media/shield-strike.png": "/auto-gladiators-guides/static/media/shield-strike.ffcda8c9b7cb655a2dc8.png",
+    "static/media/mighty-strike.png": "/auto-gladiators-guides/static/media/mighty-strike.fbb98bf68f91325fcc5b.png",
     "static/media/fearless-combo.png": "/auto-gladiators-guides/static/media/fearless-combo.d92d6da1ea3155729665.png",
     "static/media/invisible-rage.png": "/auto-gladiators-guides/static/media/invisible-rage.53c39ef2b7aa3de93113.png",
+    "static/media/burst-rage.png": "/auto-gladiators-guides/static/media/burst-rage.d679f6c6c0ca286b5456.png",
     "static/media/refraction.png": "/auto-gladiators-guides/static/media/refraction.bb0fdd48d31351870a22.png",
     "static/media/invisible-healing.png": "/auto-gladiators-guides/static/media/invisible-healing.895f123b0055fb0e4ee6.png",
     "static/media/divine-reflection.png": "/auto-gladiators-guides/static/media/divine-reflection.a177ce9f0ce60dd355dc.png",
@@ -110,17 +115,23 @@
     "static/media/invisible-fury.png": "/auto-gladiators-guides/static/media/invisible-fury.27aff53452131c2fe9ec.png",
     "static/media/invisible-wound.png": "/auto-gladiators-guides/static/media/invisible-wound.2370744ba84c860214dd.png",
     "static/media/invisible-mana.png": "/auto-gladiators-guides/static/media/invisible-mana.abda290151adf5e82710.png",
+    "static/media/burst-frost.png": "/auto-gladiators-guides/static/media/burst-frost.5a55b9b156183108edf7.png",
+    "static/media/magic-barrage.png": "/auto-gladiators-guides/static/media/magic-barrage.8e2f193f36065d92e7db.png",
     "static/media/evasion-lock.png": "/auto-gladiators-guides/static/media/evasion-lock.ecbb89153868e8e8376a.png",
+    "static/media/sword-dance.png": "/auto-gladiators-guides/static/media/sword-dance.599a42fce5717a9faeb5.png",
     "static/media/invisible-frost.png": "/auto-gladiators-guides/static/media/invisible-frost.b24473a721548fc668d7.png",
     "static/media/invisible-counterattack.png": "/auto-gladiators-guides/static/media/invisible-counterattack.cc66b9e52bc50d5b410d.png",
+    "static/media/burst-chaos.png": "/auto-gladiators-guides/static/media/burst-chaos.55fef2f22e2f8d0c87da.png",
     "static/media/vulnerability-strike.png": "/auto-gladiators-guides/static/media/vulnerability-strike.3e33133d519f8d60a2ae.png",
+    "static/media/burst-mana.png": "/auto-gladiators-guides/static/media/burst-mana.aa71cc7b507afecfd457.png",
+    "static/media/burst-regeneration.png": "/auto-gladiators-guides/static/media/burst-regeneration.16a85c49cdae00628d82.png",
     "index.html": "/auto-gladiators-guides/index.html",
     "main.29a48a15.css.map": "/auto-gladiators-guides/static/css/main.29a48a15.css.map",
-    "main.e6a5d5bb.js.map": "/auto-gladiators-guides/static/js/main.e6a5d5bb.js.map",
+    "main.229e4a3d.js.map": "/auto-gladiators-guides/static/js/main.229e4a3d.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29a48a15.css",
-    "static/js/main.e6a5d5bb.js"
+    "static/js/main.229e4a3d.js"
   ]
 }
