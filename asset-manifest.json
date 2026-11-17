@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/auto-gladiators-guides/static/css/main.97a74747.css",
-    "main.js": "/auto-gladiators-guides/static/js/main.ffbd055b.js",
+    "main.css": "/auto-gladiators-guides/static/css/main.3a33ad24.css",
+    "main.js": "/auto-gladiators-guides/static/js/main.9f329384.js",
     "static/js/453.6fa19d17.chunk.js": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js",
     "static/media/knight.jpg": "/auto-gladiators-guides/static/media/knight.71b4f9a69a562692e8c3.jpg",
     "static/media/pugna.jpg": "/auto-gladiators-guides/static/media/pugna.06d5257c3372e47ee5da.jpg",
@@ -92,21 +92,35 @@
     "static/media/revenge-aura.png": "/auto-gladiators-guides/static/media/revenge-aura.cfbfebda5bfeed309460.png",
     "static/media/armed-guard.png": "/auto-gladiators-guides/static/media/armed-guard.910ee8276d96eb48b793.png",
     "static/media/arcane-edge.png": "/auto-gladiators-guides/static/media/arcane-edge.7bbb28036a6d0953c5f0.png",
+    "static/media/wind-stride.png": "/auto-gladiators-guides/static/media/wind-stride.4c35eb471bf2d0e405d7.png",
     "static/media/shield-strike.png": "/auto-gladiators-guides/static/media/shield-strike.ffcda8c9b7cb655a2dc8.png",
     "static/media/fearless-combo.png": "/auto-gladiators-guides/static/media/fearless-combo.d92d6da1ea3155729665.png",
+    "static/media/invisible-rage.png": "/auto-gladiators-guides/static/media/invisible-rage.53c39ef2b7aa3de93113.png",
+    "static/media/refraction.png": "/auto-gladiators-guides/static/media/refraction.bb0fdd48d31351870a22.png",
+    "static/media/invisible-healing.png": "/auto-gladiators-guides/static/media/invisible-healing.895f123b0055fb0e4ee6.png",
+    "static/media/divine-reflection.png": "/auto-gladiators-guides/static/media/divine-reflection.a177ce9f0ce60dd355dc.png",
     "static/media/chaos-strike.png": "/auto-gladiators-guides/static/media/chaos-strike.df631d0320ecd51f4f74.png",
+    "static/media/seventy-two-transformations.png": "/auto-gladiators-guides/static/media/seventy-two-transformations.84e96e0116ea73240496.png",
+    "static/media/mana-deflection.png": "/auto-gladiators-guides/static/media/mana-deflection.196f07e9fcfc1b8fb5a8.png",
     "static/media/frost-strike.png": "/auto-gladiators-guides/static/media/frost-strike.dd5eac415db93bc28545.png",
     "static/media/courage-cloak.png": "/auto-gladiators-guides/static/media/courage-cloak.549f500161875daf4001.png",
     "static/media/battle-focus.png": "/auto-gladiators-guides/static/media/battle-focus.b6621c099d9b0dba7f65.png",
     "static/media/blood-edge.png": "/auto-gladiators-guides/static/media/blood-edge.e11ea94e225bf9c03bfd.png",
+    "static/media/invisible-poison.png": "/auto-gladiators-guides/static/media/invisible-poison.004626d84561ffb7c813.png",
+    "static/media/invisible-fury.png": "/auto-gladiators-guides/static/media/invisible-fury.27aff53452131c2fe9ec.png",
+    "static/media/invisible-wound.png": "/auto-gladiators-guides/static/media/invisible-wound.2370744ba84c860214dd.png",
+    "static/media/invisible-mana.png": "/auto-gladiators-guides/static/media/invisible-mana.abda290151adf5e82710.png",
+    "static/media/evasion-lock.png": "/auto-gladiators-guides/static/media/evasion-lock.ecbb89153868e8e8376a.png",
+    "static/media/invisible-frost.png": "/auto-gladiators-guides/static/media/invisible-frost.b24473a721548fc668d7.png",
+    "static/media/invisible-counterattack.png": "/auto-gladiators-guides/static/media/invisible-counterattack.cc66b9e52bc50d5b410d.png",
     "static/media/vulnerability-strike.png": "/auto-gladiators-guides/static/media/vulnerability-strike.3e33133d519f8d60a2ae.png",
     "index.html": "/auto-gladiators-guides/index.html",
-    "main.97a74747.css.map": "/auto-gladiators-guides/static/css/main.97a74747.css.map",
-    "main.ffbd055b.js.map": "/auto-gladiators-guides/static/js/main.ffbd055b.js.map",
+    "main.3a33ad24.css.map": "/auto-gladiators-guides/static/css/main.3a33ad24.css.map",
+    "main.9f329384.js.map": "/auto-gladiators-guides/static/js/main.9f329384.js.map",
     "453.6fa19d17.chunk.js.map": "/auto-gladiators-guides/static/js/453.6fa19d17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97a74747.css",
-    "static/js/main.ffbd055b.js"
+    "static/css/main.3a33ad24.css",
+    "static/js/main.9f329384.js"
   ]
 }
