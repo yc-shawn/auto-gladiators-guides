@@ -464,4 +464,157 @@ export const sectCardSections: SectCardSection[] = [
     title: '暴击',
     cards: critCards,
   },
+  {
+    sect: SECT.HEALTH,
+    title: '生命',
+    cards: [
+      {
+        id: 'sturdy-body',
+        name: '强健身躯',
+        image: require('./images/sects/sturdy-body.png'),
+        sects: [SECT.HEALTH],
+        description: '提升100/200/300/400/600点基础生命值',
+      },
+      {
+        id: 'vitality-drain',
+        name: '活力流失',
+        image: require('./images/sects/vitality-drain.png'),
+        sects: [SECT.HEALTH],
+        description: '敌人生命流技能效果降低8%/16%/24%/32%/48%',
+      },
+      {
+        id: 'blood-edge',
+        name: '鲜血锋刃',
+        image: require('./images/sects/blood-edge.png'),
+        sects: [SECT.ATTACK, SECT.HEALTH],
+        description: '提升40/80/120/160/240点生命值，每点普攻流经验额外提升1/2/3/4/6点',
+      },
+      {
+        id: 'nimble-body',
+        name: '灵巧身躯',
+        image: require('./images/sects/nimble-body.png'),
+        sects: [SECT.EVADE, SECT.HEALTH],
+        description:
+          '提升40/80/120/160/240点生命值，每点闪避流经验额外提升1/2/3/4/6点',
+      },
+      {
+        id: 'rage-body',
+        name: '狂暴身躯',
+        image: require('./images/sects/rage-body.png'),
+        sects: [SECT.CRIT, SECT.HEALTH],
+        description: '提升40/80/120/160/240点生命值，每点暴击流经验额外提升1/2/3/4/6点',
+      },
+      {
+        id: 'repair-body',
+        name: '修复身躯',
+        image: require('./images/sects/repair-body.png'),
+        sects: [SECT.HEALTH, SECT.REGEN],
+        description: '每过1.2秒，回复已损失生命值的1%/2%/3%/4%/6%，至少1点',
+      },
+      {
+        id: 'poisonous-blood',
+        name: '剧毒之血',
+        image: require('./images/sects/poisonous-blood.png'),
+        sects: [SECT.HEALTH, SECT.POISON],
+        description:
+          '每1.5秒，施加已损失生命值*0.3%/0.6%/0.9%/1.2%/1.8%的中毒，至少3点',
+      },
+      {
+        id: 'frozen-blood',
+        name: '冻结之血',
+        image: require('./images/sects/frozen-blood.png'),
+        sects: [SECT.HEALTH, SECT.FROST],
+        description:
+          '每1.5秒，施加已损失生命值*0.35%/0.7%/1.05%/1.4%/2.1%的寒霜，至少3点',
+      },
+      {
+        id: 'wounded-blood',
+        name: '损伤之血',
+        image: require('./images/sects/wounded-blood.png'),
+        sects: [SECT.HEALTH, SECT.VULNERABLE],
+        description:
+          '每1.5秒，施加已损失生命值*0.3%/0.6%/0.9%/1.2%/1.8%的易伤，至少3点',
+      },
+      {
+        id: 'mana-blood',
+        name: '魔力之血',
+        image: require('./images/sects/mana-blood.png'),
+        sects: [SECT.HEALTH, SECT.ULTI],
+        description: '获得已损失生命值*0.2%/0.4%/0.6%/0.8%/1.2%的大招效果增强',
+      },
+      {
+        id: 'blood-shield',
+        name: '鲜血护盾',
+        image: require('./images/sects/blood-shield.png'),
+        sects: [SECT.HEALTH, SECT.SHIELD],
+        description:
+          '每1.5秒，获得已损失生命值*0.3%/0.6%/0.9%/1.2%/1.8%的护盾，至少3点',
+      },
+      {
+        id: 'shared-vitality',
+        name: '分享活力',
+        image: require('./images/sects/shared-vitality.png'),
+        sects: [SECT.HEALTH, SECT.WARD],
+        description: '提升首发守卫40/80/120/160/240生命值，每点生命流经验额外提升1/2/3/4/6点',
+      },
+      {
+        id: 'burning-body',
+        name: '燃烧躯体',
+        image: require('./images/sects/burning-body.png'),
+        sects: [SECT.FURY, SECT.HEALTH],
+        description:
+          '每1.5秒，获得已损失生命值*0.35%/0.7%/1.05%/1.4%/2.1%的怒火，至少3点',
+      },
+      {
+        id: 'chaos-blood',
+        name: '生命混沌',
+        image: require('./images/sects/chaos-blood.png'),
+        sects: [SECT.CHAOS, SECT.HEALTH],
+        description:
+          '每1.5秒，获得已损失生命值*0.25%/0.5%/0.75%/1%/1.5%的混沌点，至少1点',
+      },
+      {
+        id: 'blood-strike',
+        name: '鲜血打击',
+        image: require('./images/sects/blood-strike.png'),
+        sects: [SECT.HEALTH],
+        description: '每1.2秒对敌人造成自身最大生命值1%/2%/4%的物理伤害',
+      },
+      {
+        id: 'unyielding-soul',
+        name: '不屈战魂',
+        image: require('./images/sects/unyielding-soul.png'),
+        sects: [SECT.HEALTH],
+        description: '当前每损失800生命值，提升1%/1.5%/2%减伤，最多8%/12%/16%',
+      },
+      {
+        id: 'beast-bloodline',
+        name: '野兽血脉',
+        image: require('./images/sects/beast-bloodline.png'),
+        sects: [SECT.HEALTH],
+        description: '提升15%/20%/30%生命值',
+      },
+      {
+        id: 'holy-light',
+        name: '信仰圣光',
+        image: require('./images/sects/holy-light.png'),
+        sects: [SECT.HEALTH],
+        description: '死亡时复活1次，移除所有负面效果并恢复40%生命值',
+      },
+      {
+        id: 'slorm-war-drum',
+        name: '斯洛姆战鼓',
+        image: require('./images/sects/slorm-war-drum.png'),
+        sects: [SECT.HEALTH],
+        description: '每2秒造成一次6%最大生命值的魔法伤害，并提升200生命值，最多叠加5层。',
+      },
+      {
+        id: 'strength-gain',
+        name: '力量获取',
+        image: require('./images/sects/strength-gain.png'),
+        sects: [SECT.HEALTH],
+        description: '+800生命值，8秒内生命流技能效果从已损失生命变为最大生命值',
+      },
+    ],
+  },
 ];
