@@ -158,7 +158,7 @@ const critCards: SectCard[] = [
   },
 ];
 
-export const sectCardSections: SectCardSection[] = [
+const baseSectCardSections: SectCardSection[] = [
   {
     sect: SECT.ATTACK,
     title: '普攻',
@@ -763,4 +763,137 @@ export const sectCardSections: SectCardSection[] = [
       },
     ],
   },
+];
+
+const getExistingCard = (id: string): SectCard => {
+  for (const section of baseSectCardSections) {
+    const card = section.cards.find((candidate) => candidate.id === id);
+    if (card) return card;
+  }
+
+  throw new Error(`Missing shared sect card: ${id}`);
+};
+
+const ultiSection: SectCardSection = {
+  sect: SECT.ULTI,
+  title: '大招',
+  cards: [
+    {
+      id: 'mana-gathering',
+      name: '魔力汇聚',
+      image: require('./images/sects/mana-gathering.png'),
+      sects: [SECT.ULTI],
+      description: '提升10%/20%/30%/40%/60%大招效果',
+    },
+    {
+      id: 'mana-suppression',
+      name: '魔力抑制',
+      image: require('./images/sects/mana-suppression.png'),
+      sects: [SECT.ULTI],
+      description:
+        '降低敌人8%/16%/24%/32%/48%基础魔法恢复和6%/12%/18%/24%/36%大招效果',
+    },
+    getExistingCard('arcane-edge'),
+    getExistingCard('invisible-mana'),
+    getExistingCard('burst-mana'),
+    getExistingCard('mana-blood'),
+    {
+      id: 'arcane-guard',
+      name: '奥术守卫',
+      image: require('./images/sects/arcane-guard.png'),
+      sects: [SECT.ULTI, SECT.WARD],
+      description: '每个守卫每1.5秒回复英雄1.5/3/4.5/6/9点魔法值',
+    },
+    getExistingCard('healing-magic'),
+    {
+      id: 'arcane-shield',
+      name: '奥术护盾',
+      image: require('./images/sects/arcane-shield.png'),
+      sects: [SECT.ULTI, SECT.SHIELD],
+      description: '每次施放大招时，获得15/30/45/60/90层护盾',
+    },
+    {
+      id: 'arcane-poison',
+      name: '奥术剧毒',
+      image: require('./images/sects/arcane-poison.png'),
+      sects: [SECT.ULTI, SECT.POISON],
+      description: '每次施放大招时，施加15/30/45/60/90层中毒',
+    },
+    {
+      id: 'arcane-frost',
+      name: '奥术霜冻',
+      image: require('./images/sects/arcane-frost.png'),
+      sects: [SECT.ULTI, SECT.FROST],
+      description: '每次施放大招时，施加20/40/60/80/120层寒霜',
+    },
+    {
+      id: 'arcane-vulnerability',
+      name: '奥术易伤',
+      image: require('./images/sects/arcane-vulnerability.png'),
+      sects: [SECT.ULTI, SECT.VULNERABLE],
+      description: '每次施放大招时，施加14/28/42/56/84层易伤',
+    },
+    {
+      id: 'arcane-spark',
+      name: '奥术火花',
+      image: require('./images/sects/arcane-spark.png'),
+      sects: [SECT.FURY, SECT.ULTI],
+      description: '每次施放大招时，获得20/40/60/80/120层怒火',
+    },
+    {
+      id: 'arcane-chaos',
+      name: '奥术混沌',
+      image: require('./images/sects/arcane-chaos.png'),
+      sects: [SECT.CHAOS, SECT.ULTI],
+      description: '每次施放大招时，获得14/28/42/56/84层混沌点',
+    },
+    {
+      id: 'essence-transition',
+      name: '精华变迁',
+      image: require('./images/sects/essence-transition.png'),
+      sects: [SECT.ULTI],
+      description: '施放大招后回复10%/20%/40%魔法值',
+    },
+    {
+      id: 'arcane-torrent',
+      name: '奥术洪流',
+      image: require('./images/sects/arcane-torrent.png'),
+      sects: [SECT.ULTI],
+      description: '每次施放大招时，立即对敌人造成100/200/400的魔法伤害',
+    },
+    {
+      id: 'overload',
+      name: '超负荷',
+      image: require('./images/sects/overload.png'),
+      sects: [SECT.ULTI],
+      description: '每10%大招效果获得0.4/0.8/1.6点基础魔法恢复',
+    },
+    {
+      id: 'preemptive-strike',
+      name: '先发制人',
+      image: require('./images/sects/preemptive-strike.png'),
+      sects: [SECT.ULTI],
+      description: '开战时立即施放一次大招',
+    },
+    {
+      id: 'arcane-storm',
+      name: '奥术风暴',
+      image: require('./images/sects/arcane-storm.png'),
+      sects: [SECT.ULTI],
+      description: '开战和释放大招时获得1层效果，每层提供10%大招增强和每秒20点魔法伤害',
+    },
+    {
+      id: 'arcane-overload',
+      name: '奥术过载',
+      image: require('./images/sects/arcane-overload.png'),
+      sects: [SECT.ULTI],
+      description:
+        '血量低于70%时自动释放1次大招，可触发大招流派技能，且接下来的2.5秒内英雄免疫沉默。该效果仅生效一次',
+    },
+  ],
+};
+
+export const sectCardSections: SectCardSection[] = [
+  ...baseSectCardSections,
+  ultiSection,
 ];
