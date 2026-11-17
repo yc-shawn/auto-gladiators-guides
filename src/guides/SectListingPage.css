@@ -65,6 +65,10 @@
   padding-bottom: 48px;
 }
 
+.sect-card-section {
+  margin-bottom: 32px;
+}
+
 .sect-card-section-heading {
   display: flex;
   align-items: center;
