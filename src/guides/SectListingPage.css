@@ -12,15 +12,25 @@
 }
 
 .sect-listing-header-inner,
-.sect-listing-content {
+.sect-listing-layout {
   box-sizing: border-box;
-  width: min(1120px, 100%);
+  width: min(1200px, 100%);
   margin: 0 auto;
   padding-right: 24px;
   padding-left: 24px;
 }
 
+.sect-listing-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
 .sect-listing-header-inner {
+  width: min(1120px, 100%);
   position: relative;
   padding-top: 25px;
   padding-bottom: 26px;
@@ -60,13 +70,78 @@
   font-size: 15px;
 }
 
+.sect-listing-sidebar {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  padding: 14px 10px;
+  border: 1px solid rgba(132, 160, 207, 0.2);
+  border-radius: 8px;
+  background: rgba(17, 29, 53, 0.86);
+  box-shadow: 0 8px 22px rgba(3, 10, 25, 0.22);
+}
+
+.sect-listing-sidebar-title {
+  margin: 0 8px 10px;
+  color: #91a8d0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.sect-listing-sidebar-nav {
+  display: grid;
+  gap: 4px;
+}
+
+.sect-listing-sidebar-link {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #bfcee8;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.sect-listing-sidebar-link:hover {
+  border-color: rgba(112, 145, 204, 0.28);
+  background: #1d2a4a;
+  color: #fff;
+}
+
+.sect-listing-sidebar-link:focus-visible {
+  outline: 2px solid #89aef0;
+  outline-offset: 2px;
+}
+
+.sect-listing-sidebar-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.38));
+}
+
+.sect-listing-sidebar-label {
+  min-width: 0;
+  flex: 1;
+}
+
+.sect-listing-sidebar-count {
+  color: #8ea4ca;
+  font-size: 12px;
+}
+
 .sect-listing-content {
-  padding-top: 28px;
-  padding-bottom: 48px;
+  min-width: 0;
 }
 
 .sect-card-section {
   margin-bottom: 32px;
+  scroll-margin-top: 24px;
 }
 
 .sect-card-section-heading {
@@ -170,9 +245,68 @@
   overflow-wrap: anywhere;
 }
 
+@media (max-width: 900px) {
+  .sect-listing-layout {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .sect-listing-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 -24px 22px;
+    padding: 10px 24px;
+    border: 0;
+    border-bottom: 1px solid rgba(132, 160, 207, 0.24);
+    border-radius: 0;
+    background: rgba(16, 26, 49, 0.94);
+    box-shadow: 0 6px 16px rgba(3, 10, 25, 0.2);
+    backdrop-filter: blur(12px);
+  }
+
+  .sect-listing-sidebar-title {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .sect-listing-sidebar-nav {
+    display: flex;
+    min-width: 0;
+    gap: 5px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .sect-listing-sidebar-link {
+    flex: 0 0 auto;
+    gap: 7px;
+    padding: 6px 8px;
+  }
+
+  .sect-listing-sidebar-count {
+    display: none;
+  }
+
+  .sect-card-section {
+    scroll-margin-top: 78px;
+  }
+}
+
 @media (max-width: 720px) {
   .sect-listing-header-inner,
-  .sect-listing-content {
+  .sect-listing-layout {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .sect-listing-sidebar {
+    margin-right: -16px;
+    margin-left: -16px;
     padding-right: 16px;
     padding-left: 16px;
   }

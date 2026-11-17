@@ -19,45 +19,70 @@ export default function SectListingPage() {
         </div>
       </header>
 
-      <main className="sect-listing-content">
-        {sectCardSections.map((section) => (
-          <section className="sect-card-section" key={section.sect}>
-            <div className="sect-card-section-heading">
-              <SectBadge sect={section.sect} height={42} fontSize={20} />
-              <div>
-                <p className="sect-card-section-kicker">SECT.{section.sect}</p>
-                <h2>{section.title}</h2>
-              </div>
-              <span className="sect-card-count">{section.cards.length} 张卡片</span>
-            </div>
+      <main className="sect-listing-layout">
+        <aside className="sect-listing-sidebar">
+          <p className="sect-listing-sidebar-title">快速导航</p>
+          <nav className="sect-listing-sidebar-nav" aria-label="按流派跳转">
+            {sectCardSections.map((section) => (
+              <a
+                className="sect-listing-sidebar-link"
+                href={`#sect-${section.sect.toLowerCase()}`}
+                key={section.sect}
+              >
+                <span className="sect-listing-sidebar-badge" aria-hidden="true">
+                  <SectBadge sect={section.sect} height={24} fontSize={11} />
+                </span>
+                <span className="sect-listing-sidebar-label">{section.title}</span>
+                <span className="sect-listing-sidebar-count">{section.cards.length}</span>
+              </a>
+            ))}
+          </nav>
+        </aside>
 
-            <div className="sect-card-grid">
-              {section.cards.map((card) => (
-                <article className="sect-card" key={card.id}>
-                  <div className="sect-card-top">
-                    <img className="sect-card-icon" src={card.image} alt="" />
-                    <div className="sect-card-identity">
-                      <h3>{card.name}</h3>
-                      <div
-                        className="sect-card-tags"
-                        aria-label={`关联流派：${card.sects
-                          .map((sect) => sectInfo[sect].label)
-                          .join('、')}`}
-                      >
-                        {card.sects.map((sect, index) => (
-                          <div key={`${sect}-${index}`} title={sectInfo[sect].label}>
-                            <SectBadge sect={sect} height={27} fontSize={13} />
-                          </div>
-                        ))}
+        <div className="sect-listing-content">
+          {sectCardSections.map((section) => (
+            <section
+              className="sect-card-section"
+              id={`sect-${section.sect.toLowerCase()}`}
+              key={section.sect}
+            >
+              <div className="sect-card-section-heading">
+                <SectBadge sect={section.sect} height={42} fontSize={20} />
+                <div>
+                  <p className="sect-card-section-kicker">SECT.{section.sect}</p>
+                  <h2>{section.title}</h2>
+                </div>
+                <span className="sect-card-count">{section.cards.length} 张卡片</span>
+              </div>
+
+              <div className="sect-card-grid">
+                {section.cards.map((card) => (
+                  <article className="sect-card" key={card.id}>
+                    <div className="sect-card-top">
+                      <img className="sect-card-icon" src={card.image} alt="" />
+                      <div className="sect-card-identity">
+                        <h3>{card.name}</h3>
+                        <div
+                          className="sect-card-tags"
+                          aria-label={`关联流派：${card.sects
+                            .map((sect) => sectInfo[sect].label)
+                            .join('、')}`}
+                        >
+                          {card.sects.map((sect, index) => (
+                            <div key={`${sect}-${index}`} title={sectInfo[sect].label}>
+                              <SectBadge sect={sect} height={27} fontSize={13} />
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p className="sect-card-description">{card.description}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))}
+                    <p className="sect-card-description">{card.description}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </main>
     </div>
   );
