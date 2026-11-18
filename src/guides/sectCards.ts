@@ -765,14 +765,17 @@ const baseSectCardSections: SectCardSection[] = [
   },
 ];
 
-const getExistingCard = (id: string): SectCard => {
-  for (const section of baseSectCardSections) {
+const getCardFromSections = (id: string, sections: SectCardSection[]): SectCard => {
+  for (const section of sections) {
     const card = section.cards.find((candidate) => candidate.id === id);
     if (card) return card;
   }
 
   throw new Error(`Missing shared sect card: ${id}`);
 };
+
+const getExistingCard = (id: string): SectCard =>
+  getCardFromSections(id, baseSectCardSections);
 
 const ultiSection: SectCardSection = {
   sect: SECT.ULTI,
@@ -893,7 +896,120 @@ const ultiSection: SectCardSection = {
   ],
 };
 
+const poisonSection: SectCardSection = {
+  sect: SECT.POISON,
+  title: '中毒',
+  cards: [
+    {
+      id: 'persistent-poison',
+      name: '持久毒素',
+      image: require('./images/sects/persistent-poison.png'),
+      sects: [SECT.POISON],
+      description: '每1秒施加4/8/12/16/24层中毒',
+    },
+    {
+      id: 'toxin-immunity',
+      name: '毒素免疫',
+      image: require('./images/sects/toxin-immunity.png'),
+      sects: [SECT.POISON],
+      description: '减少16%/24%/32%/40%/52%中毒伤害',
+    },
+    getExistingCard('venom-strike'),
+    getExistingCard('invisible-poison'),
+    getExistingCard('burst-poison'),
+    getExistingCard('poisonous-blood'),
+    getExistingCard('poisonous-medicine'),
+    getCardFromSections('arcane-poison', [ultiSection]),
+    {
+      id: 'poison-shield',
+      name: '染毒护盾',
+      image: require('./images/sects/poison-shield.png'),
+      sects: [SECT.POISON, SECT.SHIELD],
+      description: '每次施加护盾时，30%概率施加4/8/12/16/24层中毒',
+    },
+    {
+      id: 'poison-wound',
+      name: '染毒伤口',
+      image: require('./images/sects/poison-wound.png'),
+      sects: [SECT.POISON, SECT.VULNERABLE],
+      description: '每次施加易伤时，30%概率施加4/8/12/16/24层中毒',
+    },
+    {
+      id: 'poison-frost',
+      name: '染毒霜冻',
+      image: require('./images/sects/poison-frost.png'),
+      sects: [SECT.POISON, SECT.FROST],
+      description: '每次施加寒霜时，30%概率施加4/8/12/16/24层中毒',
+    },
+    {
+      id: 'poison-guard',
+      name: '剧毒守卫',
+      image: require('./images/sects/poison-guard.png'),
+      sects: [SECT.POISON, SECT.WARD],
+      description: '每个守卫每1.5秒施加10/20/30/40/60层中毒',
+    },
+    {
+      id: 'burning-poison',
+      name: '燃烧毒药',
+      image: require('./images/sects/burning-poison.png'),
+      sects: [SECT.FURY, SECT.POISON],
+      description: '每次施加怒火时，30%概率施加4/8/12/16/24层中毒',
+    },
+    {
+      id: 'chaos-poison',
+      name: '混沌剧毒',
+      image: require('./images/sects/chaos-poison.png'),
+      sects: [SECT.CHAOS, SECT.POISON],
+      description: '每次施加中毒时，30%概率获得4/8/12/16/24层混沌点',
+    },
+    {
+      id: 'corrosive-skin',
+      name: '腐蚀皮肤',
+      image: require('./images/sects/corrosive-skin.png'),
+      sects: [SECT.POISON],
+      description: '受到伤害时30%概率施加8/16/32层中毒',
+    },
+    {
+      id: 'prebattle-poison',
+      name: '战前毒药',
+      image: require('./images/sects/prebattle-poison.png'),
+      sects: [SECT.POISON],
+      description: '开战前施加100/200/400层中毒',
+    },
+    {
+      id: 'poison-bite',
+      name: '剧毒撕咬',
+      image: require('./images/sects/poison-bite.png'),
+      sects: [SECT.POISON],
+      description: '对敌人造成伤害时30%概率施加8/16/32层中毒',
+    },
+    {
+      id: 'malignant-plague',
+      name: '恶性瘟疫',
+      image: require('./images/sects/malignant-plague.png'),
+      sects: [SECT.POISON],
+      description:
+        '生命低于40%时召唤1次剧毒法阵，施加400层毒素并立即结算1次中毒伤害，',
+    },
+    {
+      id: 'nether-poison',
+      name: '幽冥剧毒',
+      image: require('./images/sects/nether-poison.png'),
+      sects: [SECT.POISON],
+      description: '减少0.2秒中毒伤害间隔，且每次中毒伤害有30%概率不衰减',
+    },
+    {
+      id: 'plague-body',
+      name: '瘟疫之体',
+      image: require('./images/sects/plague-body.png'),
+      sects: [SECT.POISON],
+      description: '施加40层毒素增强，每1秒对敌方施加20%期间自身受到的中毒层数',
+    },
+  ],
+};
+
 export const sectCardSections: SectCardSection[] = [
   ...baseSectCardSections,
   ultiSection,
+  poisonSection,
 ];
