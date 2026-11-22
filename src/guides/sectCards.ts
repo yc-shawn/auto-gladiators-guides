@@ -777,6 +777,101 @@ const getCardFromSections = (id: string, sections: SectCardSection[]): SectCard 
 const getExistingCard = (id: string): SectCard =>
   getCardFromSections(id, baseSectCardSections);
 
+const frostCards: SectCard[] = [
+    {
+      id: 'persistent-frost',
+      name: '持久冻结',
+      image: require('./images/sects/persistent-frost.png'),
+      sects: [SECT.FROST],
+      description: '每1秒施加6/12/18/24/36层寒霜',
+    },
+    {
+      id: 'frost-immunity',
+      name: '冰霜免疫',
+      image: require('./images/sects/frost-immunity.png'),
+      sects: [SECT.FROST],
+      description: '敌人施加寒霜时18%/24%/30%/36%/48%概率失败',
+    },
+    {
+      id: 'frost-shield',
+      name: '寒冰护盾',
+      image: require('./images/sects/frost-shield.png'),
+      sects: [SECT.FROST, SECT.SHIELD],
+      description: '每次增加护盾时，30%概率施加4/8/12/16/24层寒霜',
+    },
+    {
+      id: 'malignant-frost',
+      name: '恶性冻伤',
+      image: require('./images/sects/malignant-frost.png'),
+      sects: [SECT.FROST, SECT.VULNERABLE],
+      description: '每次施加易伤时，30%概率同时施加4/8/12/16/24层寒霜',
+    },
+    {
+      id: 'frost-guard',
+      name: '寒霜守卫',
+      image: require('./images/sects/frost-guard.png'),
+      sects: [SECT.FROST, SECT.WARD],
+      description: '每个守卫每1.5秒施加10/20/30/40/60层寒霜',
+    },
+    {
+      id: 'extreme-cold-chaos',
+      name: '极寒混沌',
+      image: require('./images/sects/extreme-cold-chaos.png'),
+      sects: [SECT.CHAOS, SECT.FROST],
+      description: '每次施加寒霜时，30%概率获得4/8/12/16/24层混沌点',
+    },
+    {
+      id: 'water-fire-harmony',
+      name: '水火并济',
+      image: require('./images/sects/water-fire-harmony.png'),
+      sects: [SECT.FURY, SECT.FROST],
+      description:
+        '根据寒霜和怒火的流派经验大小，（获得/施加）经验低的流派时有30%概率（获得/施加）4/8/12/16/24层另一流派层数。经验相同时，怒火视为经验低的流派',
+    },
+    {
+      id: 'piercing-cold',
+      name: '刺骨严寒',
+      image: require('./images/sects/piercing-cold.png'),
+      sects: [SECT.FROST],
+      description: '施加寒霜时30%概率召唤冰锥，造成30/60/120点魔法伤害',
+    },
+    {
+      id: 'ice-enchantment',
+      name: '寒冰附魔',
+      image: require('./images/sects/ice-enchantment.png'),
+      sects: [SECT.FROST],
+      description: '受到伤害时25%概率施加20/28/44层寒霜',
+    },
+    {
+      id: 'rapid-cooling',
+      name: '急速冷却',
+      image: require('./images/sects/rapid-cooling.png'),
+      sects: [SECT.FROST],
+      description: '开战前施加80/160/320层寒霜和30/60/120层永续寒霜',
+    },
+    {
+      id: 'frost-nova',
+      name: '霜冻新星',
+      image: require('./images/sects/frost-nova.png'),
+      sects: [SECT.FROST],
+      description: '每1.8秒召唤寒霜法阵，造成（180+当前寒霜层数*1）的魔法伤害',
+    },
+    {
+      id: 'ice-seal',
+      name: '冰封禁制',
+      image: require('./images/sects/ice-seal.png'),
+      sects: [SECT.FROST],
+      description: '开战时晕眩敌人1.2秒。期间每0.3秒造成80点魔法伤害并施加20层寒霜',
+    },
+    {
+      id: 'extreme-cold-embrace',
+      name: '极寒之拥',
+      image: require('./images/sects/extreme-cold-embrace.png'),
+      sects: [SECT.FROST],
+      description: '生命值首次低于25%时，对自身释放极寒之拥',
+    },
+];
+
 const ultiSection: SectCardSection = {
   sect: SECT.ULTI,
   title: '大招',
@@ -1008,8 +1103,24 @@ const poisonSection: SectCardSection = {
   ],
 };
 
+const frostSection: SectCardSection = {
+  sect: SECT.FROST,
+  title: '冰霜',
+  cards: [
+    getExistingCard('frost-strike'),
+    getExistingCard('invisible-frost'),
+    getExistingCard('burst-frost'),
+    getExistingCard('frozen-blood'),
+    getExistingCard('frost-healing'),
+    ...frostCards,
+    getCardFromSections('arcane-frost', [ultiSection]),
+    getCardFromSections('poison-frost', [poisonSection]),
+  ],
+};
+
 export const sectCardSections: SectCardSection[] = [
   ...baseSectCardSections,
+  frostSection,
   ultiSection,
   poisonSection,
 ];
