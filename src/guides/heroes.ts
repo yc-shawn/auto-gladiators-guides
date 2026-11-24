@@ -84,7 +84,7 @@ export const heroes: Hero[] = [
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/luna.jpg',
     guides: [
       { sects: [ATTACK, CRIT], description: '右右右' },
-      { sects: [ATTACK], description: '左左左' },
+      { sects: [ATTACK], description: '右右左' },
     ],
   },
   {
@@ -392,7 +392,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '巫妖',
-    rank: Rank.A,
+    rank: Rank.B,
     sects: [FROST],
     image: require('./images/heroes/lich.jpg'),
     remoteImage:
@@ -425,14 +425,14 @@ export const heroes: Hero[] = [
   },
   {
     name: '小黑',
-    rank: Rank.B,
+    rank: Rank.A,
     sects: [FROST],
     image: require('./images/heroes/drowranger.jpg'),
     remoteImage:
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/drowranger.jpg',
     guides: [
       { sects: [FROST, CRIT], description: '左左右' },
-      { sects: [FROST, ATTACK], description: '右右右' },
+      { sects: [ULTI], description: '左右左' },
     ],
   },
   {
@@ -482,13 +482,13 @@ export const heroes: Hero[] = [
   },
   {
     name: '骨法',
-    rank: Rank.C,
+    rank: Rank.B,
     sects: [WARD, REGEN],
     image: require('./images/heroes/pugna.jpg'),
     remoteImage:
       'https://img.dota2.com.cn/dota2static/herostatic/index/npc_dota_hero_pugna.png',
     guides: [
-      { sects: [WARD, REGEN], description: '左右右 要灵魂链接' },
+      { sects: [WARD, REGEN], description: '左右右' },
       { sects: [ULTI, CRIT], description: '右左右' },
     ],
   },
@@ -556,7 +556,7 @@ export const heroes: Hero[] = [
   },
   {
     name: '屠夫',
-    rank: Rank.A,
+    rank: Rank.S,
     sects: [POISON, HEALTH],
     image: require('./images/heroes/pudge.jpg'),
     remoteImage:
@@ -740,12 +740,12 @@ export const heroes: Hero[] = [
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/axe.jpg',
     guides: [
       { sects: [ATTACK, SHIELD], description: '左左左' },
-      { sects: [HEALTH, SHIELD], description: '右右右' },
+      { sects: [SHIELD, EVADE], description: '右右右' },
     ],
   },
   {
     name: '毒龙',
-    rank: Rank.S,
+    rank: Rank.A,
     sects: [POISON],
     image: require('./images/heroes/viper.jpg'),
     remoteImage:
@@ -819,7 +819,7 @@ export const heroes: Hero[] = [
     image: require('./images/heroes/voidspirit.jpg'),
     remoteImage:
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/voidspirit.jpg',
-    guides: [{ sects: [HEALTH, VULNERABLE], description: '左左左+晶' }],
+    guides: [{ sects: [VULNERABLE, EVADE], description: '左左左+晶' }],
   },
   {
     name: '戴泽',
@@ -889,7 +889,7 @@ export const heroes: Hero[] = [
     remoteImage:
       'https://imgs-test.oss-cn-shanghai.aliyuncs.com/heroes/mozun.jpg',
     guides: [
-      { sects: [ATTACK, CHAOS], description: '左左左+晶' },
+      { sects: [ATTACK, EVADE], description: '左左左+晶' },
       { sects: [HEALTH, CHAOS], description: '左左右' },
     ],
   },
